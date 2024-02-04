@@ -1,0 +1,129 @@
+@import "bootstrap.css";
+@import "reset.css";
+@import "variables.css";
+@import "utilities.css";
+@import "header.css";
+@import "footer.css";
+@import "help.css";
+
+/* blog info */
+.blog__info {
+  box-shadow: 0px 10px 20px 0px rgba(221, 221, 221, 0.3);
+}
+.blog__info a {
+  font-size: 24px;
+}
+.blog__info p {
+  font-size: 16px;
+}
+.blog__info-date {
+  position: absolute;
+  bottom: -2rem;
+  left: 2rem;
+  cursor: pointer;
+  background-color: var(--pink-color);
+  color: #fff;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.blog__info-date:hover {
+  background-color: transparent;
+  color: var(--pink-color);
+  transition: 0s;
+  -webkit-transition: 0s;
+  -moz-transition: 0s;
+  -ms-transition: 0s;
+  -o-transition: 0s;
+}
+.blog__info-date span:first-child {
+  font-family: "Poppins", sans-serif;
+}
+.blog__info-links {
+  width: 75%;
+  color: #999;
+  margin-left: 0;
+}
+.blog__info-links span {
+  font-size: 14px;
+}
+.blog__info-links i {
+  font-size: 13px;
+}
+.blog__info-links div:first-child {
+  position: relative;
+}
+.blog__info-links div:first-child::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 1px;
+  background-color: #999;
+  left: 100%;
+  top: 0;
+}
+
+.blog__info div:nth-child(2) {
+  padding: 0 1.75rem;
+}
+.pagination li a:hover {
+  color: var(--pink-color) !important;
+}
+
+/* sidebar */
+
+.search input {
+  font-size: 13px;
+}
+.search i {
+  background-color: var(--pink-color);
+}
+.tags__container li a {
+  font-size: 13px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.tags__container li a:hover {
+  background-color: var(--pink-color) !important;
+  color: #fff !important;
+}
+
+/* --------------------------------- Responsive ---------------------------------- */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .blog__info-links div:first-child::after {
+    left: 85%;
+  }
+}
+
+@media (max-width: 769px) {
+}
+
+/* Mobile */
+
+@media (max-width: 577px) {
+  .blog__info a {
+    font-size: 17px;
+  }
+  .blog__info p {
+    font-size: 14px;
+  }
+  .blog__info-links {
+    width: 70%;
+  }
+  .blog__info-links div:first-child::after {
+    left: 100%;
+  }
+  .blog__info-date {
+    left: 0.5rem;
+  }
+  .blog__info div:nth-child(2) {
+    padding: 0 0.75rem;
+  }
+}

@@ -1,0 +1,139 @@
+@import "animation.css";
+
+/* --------------------------------- header ---------------------------------- */
+
+.header nav ul li {
+  font-size: 14px;
+  margin: 0 16px;
+  padding: 0.4rem 0;
+}
+
+.header nav ul li:nth-child(6) {
+  margin-left: 2rem;
+}
+.header nav ul li a {
+  position: relative;
+  font-size: 14px;
+  padding: 2.2rem 0;
+  color: #fff;
+}
+.header nav ul li a:visited {
+  color: #fff;
+}
+.header nav ul li:not(:nth-child(6)) a::after {
+  content: "";
+  position: absolute;
+  background-color: var(--pink-color);
+  width: 0;
+  height: 1px;
+  bottom: 2rem;
+  left: 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.header nav ul li:not(:nth-child(7)) a:hover {
+  color: var(--pink-color);
+}
+.header nav ul li:not(:nth-child(7)) a:hover::after {
+  width: 100%;
+}
+
+.header nav .submenu {
+  width: 170px;
+  top: 90%;
+  visibility: hidden;
+  opacity: 0;
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(to bottom, #a077ff 0%, #ef67ff 100%);
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.header nav ul li:nth-child(4):hover .submenu {
+  top: 100%;
+  visibility: visible;
+  opacity: 1;
+}
+.header nav .submenu li {
+  font-size: 16px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.header nav .submenu li a::after {
+  display: none;
+}
+.header nav .submenu li:hover {
+  padding-left: 4px;
+}
+.header nav .submenu a {
+  padding: 0;
+}
+
+/* --------------------------------- Responsive ---------------------------------- */
+
+.header__mobile-nav,
+.header__mobile-nav ul {
+  background-color: #4c4c4c;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.header__mobile-nav > label {
+  background-color: #222;
+}
+.header__mobile-nav > input ~ ul {
+  animation-name: close-navbar;
+  animation-duration: 0.3s;
+  visibility: hidden;
+  opacity: 0;
+}
+.header__mobile-nav > input:checked ~ ul {
+  animation-name: open-navbar;
+  animation-duration: 0.3s;
+  visibility: visible;
+  opacity: 1;
+}
+.header__mobile-nav ul li a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
+}
+.header__mobile-nav ul li a:hover,
+.header__mobile-nav label[for="blog-switch"]:hover {
+  background-color: #ccc;
+  color: #222;
+}
+
+.header__mobile-nav > ul input:checked ~ label > span.blog__plus {
+  display: none !important;
+}
+.header__mobile-nav > ul input:checked ~ label > span.blog__minus {
+  display: block !important;
+}
+.header ul li:nth-child(6) {
+  margin-left: 0;
+}
+.header__mobile-nav > ul input ~ ul.blog__submenu {
+  animation-name: close-submenu;
+  animation-duration: 0.3s;
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+}
+.header__mobile-nav > ul input:checked ~ ul.blog__submenu {
+  display: block !important;
+  animation-name: open-submenu;
+  animation-duration: 0.3s;
+  visibility: visible;
+  opacity: 1;
+  height: 85px;
+}

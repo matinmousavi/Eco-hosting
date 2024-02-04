@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Eco-hosting</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="./assets/css/package.css">
+    </head>
+
+    <body>
+        <!-- header -->
+        <header class="header bg-purple">
+            <div
+                class="bg-transparent position-relative top-0 z-3 start-0 end-0 px-md-5 d-lg-flex justify-content-lg-between align-items-lg-center align-items-stretch flex-lg-row flex-column">
+                <div class="ms-lg-0 ms-4 pt-2">
+                    <a href="./index.html">
+                        <img src="./assets/images/logo/logo.png.webp" alt="Eco-hosting">
+                    </a>
+                </div>
+                <nav class="d-sm-none d-md-none d-none d-lg-block">
+                    <ul class="d-lg-flex align-items-lg-center my-lg-0 me-lg-3">
+                        <li>
+                            <a href="./index.html" class="nav-link">HOME</a>
+                        </li>
+                        <li>
+                            <a href="./packages.html" class="nav-link">PACKAGES</a>
+                        </li>
+                        <li>
+                            <a href="./help.html" class="nav-link">HELP</a>
+                        </li>
+                        <li class="position-relative">
+                            <a href="./blog.html" class="nav-link">BLOG</a>
+                            <ul class="position-absolute start-0 ps-0 py-3 submenu">
+                                <li>
+                                    <a href="./blog.html" class="text-white">BLOG</a>
+                                </li>
+                                <li>
+                                    <a href="./blog_details.html" class="text-white">BLOG DETAILS</a>
+                                </li>
+                                <li>
+                                    <a href="./elements.html" class="text-white">ELEMENT</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./contact.html" class="nav-link">CONTACT</a>
+                        </li>
+                        <li>
+                            <a href="./register.html" class="custom-btn py-lg-3 px-lg-5 rounded-5">SIGN
+                                UP</a>
+                        </li>
+                        <li>
+                            <a href="./login.html" class="nav-link">SIGN IN</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="position-relative d-lg-none py-3 text-end pe-4 header__mobile-nav">
+                    <input type="checkbox" id="default-switch" class="d-none">
+                    <label for="default-switch" class="py-1 px-2 rounded-1 text-white" role="button">
+                        <span>MENU</span>
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+                    <ul class="position-absolute top-100 start-0 my-lg-0 me-lg-3 w-100 text-white text-start px-4 pb-3">
+                        <li>
+                            <a href="./index.html" class="nav-link py-2 px-2 fw-medium rounded-1">Home</a>
+                        </li>
+                        <li>
+                            <a href="./packages.html" class="nav-link py-2 px-2 fw-medium rounded-1">Packages</a>
+                        </li>
+                        <li>
+                            <a href="./help.html" class="nav-link py-2 px-2 fw-medium rounded-1">Help</a>
+                        </li>
+                        <li class="position-relative">
+                            <input type="checkbox" id="blog-switch" class="d-none">
+                            <label for="blog-switch" class="py-1 d-block px-2 rounded-1 text-white" role="button">
+                                <span class="blog__plus">Blog &nbsp; +</span>
+                                <span class="blog__minus d-none">Blog &nbsp; -</span>
+                            </label>
+                            <!-- <a href="#" class="nav-link py-2 px-2 fw-medium rounded-1"></a> -->
+                            <ul class="py-1 blog__submenu">
+                                <li>
+                                    <a href="./blog.html" class="py-1 nav-link ps-2 fw-medium rounded-1">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="./blog_details.html" class="py-1 nav-link ps-2 fw-medium rounded-1">Blog
+                                        Details</a>
+                                </li>
+                                <li>
+                                    <a href="./elements.html" class="py-1 nav-link ps-2 fw-medium rounded-1">Element</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./contact.html" class="nav-link py-2 px-2 fw-medium rounded-1">Contact</a>
+                        </li>
+                        <li class="my-4">
+                            <a href="./register.html" class="custom-btn py-3 px-5 rounded-5">Sign Up</a>
+                        </li>
+                        <li>
+                            <a href="./login.html" class="nav-link py-2 px-2 fw-medium rounded-1">Sign In</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- main -->
+        <main class="pb-5">
+            <div class="bg-purple pt-sm-5 pt-4 text-white">
+                <div class="position-absolute top-0 start-0 z-2 d-md-block d-none" d-lg-block d-none>
+                    <img src="./assets/images/hero/top-left-shape.png.webp" alt="top left shape">
+                </div>
+            </div>
+
+            <!-- choose plan -->
+            <div class="position-relative">
+                <section class="choose__plan bg-purple text-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-lg-8 mx-auto text-center">
+                                <h2 class="fw-bold mt-lg-5 pt-lg-5 pb-3 text-white">Choose plan which fit for you</h2>
+                                <p>
+                                    Supercharge your WordPress hosting with detailed website analytics, marketing tools.
+                                    Our experts are just part of the reason Bluehost is the ideal home for your
+                                    WordPress website. We're here to help you succeed!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="container position-absolute top-50 mt-5 start-50 translate-middle-x z-1">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-10 mt-5 mt-md-4 mt-lg-0">
+                            <div class="bg-white text-center py-5 px-0 rounded-3 choose__plan-card">
+                                <div>
+                                    <div class="mb-4">
+                                        <img src="./assets/images/icon/price1.svg" alt="choose plan card image">
+                                    </div>
+                                    <h4 class="fw-semibold fs-3 mb-4 text-purple">Shared Hosting</h4>
+                                    <span>Starting at</span>
+                                    <h4 class="fw-semibold fs-2 mt-2 position-relative pb-4 text-purple">
+                                        $4.67 <span>/ month</span>
+                                    </h4>
+                                </div>
+                                <div>
+                                    <ul class="choose__plan-card-list">
+                                        <li>2 TB of space</li>
+                                        <li>unlimited bandwidth</li>
+                                        <li>full backup systems</li>
+                                        <li>free domain</li>
+                                        <li>unlimited database</li>
+                                    </ul>
+                                    <a href="#" class="rounded-5">GET STARTED</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-10 mt-5 mt-md-4 mt-lg-0">
+                            <div class="bg-white text-center py-5 px-0 rounded-3 choose__plan-card">
+                                <div>
+                                    <div class="mb-4">
+                                        <img src="./assets/images/icon/price2.svg" alt="choose plan card image">
+                                    </div>
+                                    <h4 class="fw-semibold fs-3 mb-4 text-purple">Dedicated Hosting</h4>
+                                    <span>Starting at</span>
+                                    <h4 class="fw-semibold fs-2 mt-2 position-relative pb-4 text-purple">
+                                        $4.67 <span>/ month</span>
+                                    </h4>
+                                </div>
+                                <div>
+                                    <ul class="choose__plan-card-list">
+                                        <li>2 TB of space</li>
+                                        <li>unlimited bandwidth</li>
+                                        <li>full backup systems</li>
+                                        <li>free domain</li>
+                                        <li>unlimited database</li>
+                                    </ul>
+                                    <a href="#" class="rounded-5">GET STARTED</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-10 mt-5 mt-md-4 mt-lg-0">
+                            <div class="bg-white text-center py-5 px-0 rounded-3 choose__plan-card">
+                                <div>
+                                    <div class="mb-4">
+                                        <img src="./assets/images/icon/price3.svg" alt="choose plan card image">
+                                    </div>
+                                    <h4 class="fw-semibold fs-3 mb-4 text-purple">Shared Hosting</h4>
+                                    <span>Starting at</span>
+                                    <h4 class="fw-semibold fs-2 mt-2 position-relative pb-4 text-purple">
+                                        $4.67 <span>/ month</span>
+                                    </h4>
+                                </div>
+                                <div>
+                                    <ul class="choose__plan-card-list">
+                                        <li>2 TB of space</li>
+                                        <li>unlimited bandwidth</li>
+                                        <li>full backup systems</li>
+                                        <li>free domain</li>
+                                        <li>unlimited database</li>
+                                    </ul>
+                                    <a href="#" class="rounded-5">GET STARTED</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <!-- global server -->
+                <section class="global__server">
+                    <div class="row align-items-lg-center">
+                        <div class="col-lg-5 col-md-8 mb-md-5 ">
+                            <img src="./assets/images/gallery/about1.png.webp" class="w-100"
+                                alt="global server picture">
+                        </div>
+                        <div class="col-12 col-lg-7">
+                            <h2 class="fw-semibold text-purple mt-5 mt-md-0">Global server location</h2>
+                            <p class="my-4 my-md-5 ">
+                                Supercharge your WordPress hosting with detailed website analytics, marketing tools.
+                                Our experts are just part of the reason Bluehost is the ideal home for your
+                                WordPress website. We're here to help you succeed!
+                            </p>
+                            <ul class="d-lg-flex flex-column gap-3 ps-0">
+                                <li class="d-lg-flex gap-4 align-items-lg-center">
+                                    <img src="./assets/images/icon/right.svg" alt="">
+                                    <p class="mb-0">WordPress hosting with detailed website</p>
+                                </li>
+                                <li class="d-lg-flex gap-4 align-items-lg-center">
+                                    <img src="./assets/images/icon/right.svg" alt="">
+                                    <p class="mb-0">Our experts are just part of the reason</p>
+                                </li>
+                                <li class="d-lg-flex gap-4 align-items-lg-center">
+                                    <img src="./assets/images/icon/right.svg" alt="">
+                                    <p class="mb-0"> Detailed website analytics</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <!-- dedicated support -->
+                <section class="dedicated__server">
+                    <div class="row align-items-lg-center">
+                        <div class="col-lg-7 px-lg-5 ">
+                            <h2 class="fw-semibold text-purple mt-0 mt-lg-5 mt-md-0 mb-4 mb-md-0">Dedicated support</h2>
+                            <p class="my-5">
+                                Supercharge your WordPress hosting with detailed website analytics, marketing tools.
+                                Our experts are just part of the reason Bluehost is the ideal home for your
+                                WordPress website. We're here to help you succeed!
+                            </p>
+                            <ul class="d-lg-flex flex-column gap-3 ps-0 mb-5">
+                                <li class="d-lg-flex gap-4 align-items-lg-center">
+                                    <img src="./assets/images/icon/right.svg" alt="">
+                                    <p class="mb-0">WordPress hosting with detailed website</p>
+                                </li>
+                                <li class="d-lg-flex gap-4 align-items-lg-center">
+                                    <img src="./assets/images/icon/right.svg" alt="">
+                                    <p class="mb-0">Our experts are just part of the reason</p>
+                                </li>
+                            </ul>
+                            <a href="#" class="custom-btn px-5 py-4 rounded-5 mt-5">
+                                <i class="fas fa-phone-alt"></i>
+                                (10) 892-293 2678
+                            </a>
+                        </div>
+                        <div class="col-lg-5 col-md-8 mt-md-5 mt-lg-0">
+                            <img src="./assets/images/gallery/about2.png.webp" class="w-100"
+                                alt="dedicated server picture">
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        </main>
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="container pt-5">
+                <div class="row justify-content-lg-between pt-5">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                        <div class="mb-5">
+                            <div class="footer-logo mb-5">
+                                <a href="index.html"><img src="./assets/images/logo/logo2_footer.png.webp"
+                                        alt="footer logo"></a>
+                            </div>
+                            <div class="footer-tittle mb-5">
+                                <span class="d-block mt-4 mb-5">Subscribe our newsletter to get updates about our
+                                    services</span>
+                            </div>
+
+                            <form action="#" class="d-lg-flex flex-column gap-4">
+                                <input type="email" placeholder="Email Address"
+                                    class="text-center text-white bg-transparent">
+                                <button class="border-0 text-white">Subscribe</button>
+                            </form>
+                            <div class="d-lg-flex mt-5 gap-3 footer__socials">
+                                <a href="#"
+                                    class="d-lg-flex justify-content-center align-items-lg-center text-white p-2 rounded-pill">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#"
+                                    class="d-lg-flex justify-content-center align-items-lg-center text-white p-2 rounded-pill">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#"
+                                    class="d-lg-flex justify-content-center align-items-lg-center text-white p-2 rounded-pill">
+                                    <i class="fab fa-pinterest-p"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1"></div>
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-5">
+                        <h3 class="text-white fw-medium">Company</h3>
+                        <ul class="ps-0 mt-4">
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Why choose us</a>
+                            </li>
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Review</a>
+                            </li>
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Customers</a>
+                            </li>
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Blog</a>
+                            </li>
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Carrier</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-5">
+                        <h3 class="text-white fw-medium">Products</h3>
+                        <ul class="ps-0 mt-4">
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Why choose us</a>
+                            </li>
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Review</a>
+                            </li>
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Customers</a>
+                            </li>
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Blog</a>
+                            </li>
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Carrier</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-5">
+                        <h3 class="text-white fw-medium">Support</h3>
+                        <ul class="ps-0 mt-4">
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Technology</a>
+                            </li>
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Products</a>
+                            </li>
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Customers</a>
+                            </li>
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Quality</a>
+                            </li>
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Sales geography</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="mb-0 text-white-50 text-center py-5 mt-4">
+                    Copyright ©2024 All rights reserved | This template is made with
+                    <i class="text-white fa fa-heart"></i>
+                    by
+                    <a href="#" class="text-white fw-medium">Colorlib</a>
+                </p>
+            </div>
+        </footer>
+
+        <a href="#" class="level-up-btn position-fixed z-3">
+            <i
+                class="fa fa-level-up-alt text-white d-lg-flex justify-content-center align-items-lg-center rounded-pill"></i>
+        </a>
+    </body>
+
+</html>

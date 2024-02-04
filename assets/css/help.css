@@ -1,0 +1,63 @@
+@import "bootstrap.css";
+@import "reset.css";
+@import "variables.css";
+@import "utilities.css";
+@import "header.css";
+@import "footer.css";
+
+/* --------------------------------- main ---------------------------------- */
+.bg-purple {
+  background-color: var(--primary-color);
+}
+
+/* help */
+
+.help__center {
+  padding: 6rem 0 14rem 0;
+}
+.help__center h2 {
+  font-size: 44px;
+}
+
+/* ask__questions */
+.ask__questions {
+  padding-top: 8rem;
+}
+.ask__questions h2 {
+  font-size: 44px;
+}
+.ask__questions p {
+  color: #6e7697;
+}
+.ask__questions .ask__questions-text {
+  color: #7a8290;
+}
+.ask__questions h3 {
+  font-size: 20px;
+  margin-bottom: 21px;
+}
+.ask__questions .col-lg-6 span {
+  font-size: 20px;
+}
+
+/* --------------------------------- Responsive ---------------------------------- */
+
+/* Tablet */
+@media (max-width: 769px) {
+  /* .help__center {
+    padding: 3rem 0 10rem 0;
+  } */
+}
+
+/* Mobile */
+@media (max-width: 577px) {
+  .help__center {
+    padding: 3rem 0 10rem 0;
+  }
+  .help__center h2 {
+    font-size: 30px;
+  }
+  .ask__questions h2 {
+    font-size: 24px;
+  }
+}

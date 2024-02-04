@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Eco-hosting</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="./assets/css/elements.css">
+    </head>
+
+    <body>
+        <!-- header -->
+        <header class="header bg-purple">
+            <div
+                class="bg-transparent position-relative top-0 z-3 start-0 end-0 px-md-5 d-lg-flex justify-content-lg-between align-items-lg-center align-items-stretch flex-lg-row flex-column">
+                <div class="ms-lg-0 ms-4 pt-2">
+                    <a href="./index.html">
+                        <img src="./assets/images/logo/logo.png.webp" alt="Eco-hosting">
+                    </a>
+                </div>
+                <nav class="d-sm-none d-md-none d-none d-lg-block">
+                    <ul class="d-lg-flex align-items-lg-center my-lg-0 me-lg-3">
+                        <li>
+                            <a href="./index.html" class="nav-link">HOME</a>
+                        </li>
+                        <li>
+                            <a href="./packages.html" class="nav-link">PACKAGES</a>
+                        </li>
+                        <li>
+                            <a href="./help.html" class="nav-link">HELP</a>
+                        </li>
+                        <li class="position-relative">
+                            <a href="./blog.html" class="nav-link">BLOG</a>
+                            <ul class="position-absolute start-0 ps-0 py-3 submenu">
+                                <li>
+                                    <a href="./blog.html" class="text-white">BLOG</a>
+                                </li>
+                                <li>
+                                    <a href="./blog_details.html" class="text-white">BLOG DETAILS</a>
+                                </li>
+                                <li>
+                                    <a href="./elements.html" class="text-white">ELEMENT</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./contact.html" class="nav-link">CONTACT</a>
+                        </li>
+                        <li>
+                            <a href="./register.html" class="custom-btn py-lg-3 px-lg-5 rounded-5">SIGN
+                                UP</a>
+                        </li>
+                        <li>
+                            <a href="./login.html" class="nav-link">SIGN IN</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="position-relative d-lg-none py-3 text-end pe-4 header__mobile-nav">
+                    <input type="checkbox" id="default-switch" class="d-none">
+                    <label for="default-switch" class="py-1 px-2 rounded-1 text-white" role="button">
+                        <span>MENU</span>
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+                    <ul class="position-absolute top-100 start-0 my-lg-0 me-lg-3 w-100 text-white text-start px-4 pb-3">
+                        <li>
+                            <a href="./index.html" class="nav-link py-2 px-2 fw-medium rounded-1">Home</a>
+                        </li>
+                        <li>
+                            <a href="./packages.html" class="nav-link py-2 px-2 fw-medium rounded-1">Packages</a>
+                        </li>
+                        <li>
+                            <a href="./help.html" class="nav-link py-2 px-2 fw-medium rounded-1">Help</a>
+                        </li>
+                        <li class="position-relative">
+                            <input type="checkbox" id="blog-switch" class="d-none">
+                            <label for="blog-switch" class="py-1 d-block px-2 rounded-1 text-white" role="button">
+                                <span class="blog__plus">Blog &nbsp; +</span>
+                                <span class="blog__minus d-none">Blog &nbsp; -</span>
+                            </label>
+                            <!-- <a href="#" class="nav-link py-2 px-2 fw-medium rounded-1"></a> -->
+                            <ul class="py-1 blog__submenu">
+                                <li>
+                                    <a href="./blog.html" class="py-1 nav-link ps-2 fw-medium rounded-1">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="./blog_details.html" class="py-1 nav-link ps-2 fw-medium rounded-1">Blog
+                                        Details</a>
+                                </li>
+                                <li>
+                                    <a href="./elements.html" class="py-1 nav-link ps-2 fw-medium rounded-1">Element</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./contact.html" class="nav-link py-2 px-2 fw-medium rounded-1">Contact</a>
+                        </li>
+                        <li class="my-4">
+                            <a href="./register.html" class="custom-btn py-3 px-5 rounded-5">Sign Up</a>
+                        </li>
+                        <li>
+                            <a href="./login.html" class="nav-link py-2 px-2 fw-medium rounded-1">Sign In</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- main -->
+        <main>
+            <div class="position-absolute top-0 start-0 z-2 d-md-block d-none" d-lg-block d-none>
+                <img src="./assets/images/hero/top-left-shape.png.webp" alt="top left shape">
+            </div>
+            <!-- elements center -->
+            <div class="bg-purple help__center">
+                <h2 class="text-white fw-bold text-center">Elements</h2>
+            </div>
+            <div class="element">
+                <div class="container my-5">
+                    <h3 class="text-purple fw-medium fs-3 mt-5 mb-4">Text Sample</h3>
+                    <p class="mt-2 element__text-sample text-muted border-bottom">
+                        Every avid independent filmmaker has <b>Bold</b> about making that <i>Italic</i> interest
+                        documentary,
+                        or short
+                        film to show off their creative prowess. Many have great ideas and want to “wow”
+                        the<sup>Superscript</sup> scene,
+                        or video renters with their big project. But once you have the<sub>Subscript</sub> “in the can”
+                        (no easy
+                        feat), how
+                        do you move from a <del>Strike</del> through of master DVDs with the <u>“Underline”</u> marked
+                        hand-written title
+                        inside a secondhand CD case, to a pile of cardboard boxes full of shiny new, retail-ready DVDs,
+                        with UPC
+                        barcodes
+                        and polywrap sitting on your doorstep? You need to create eye-popping artwork and have your
+                        project
+                        replicated.
+                        Using a reputable full service DVD Replication company like PacificDisc, Inc. to partner with is
+                        certainly a
+                        helpful option to ensure a professional end result, but to help with your DVD replication
+                        project, here
+                        are 4 easy
+                        steps to follow for good DVD replication results:
+                    </p>
+                    <!-- Sample Buttons -->
+                    <section class="border-bottom pb-5">
+                        <h3 class="text-purple fw-medium fs-3 mt-5 mb-5">Sample Buttons</h3>
+                        <div class="mb-5">
+                            <div class="btn-group element__btns-sample mb-3">
+                                <a href="#" class="custom__btn-default">Default</a>
+                                <a href="#" class="custom__btn-primary me-2">Primary</a>
+                                <a href="#" class="custom__btn-success me-2">Success</a>
+                                <a href="#" class="custom__btn-info me-2">Info</a>
+                                <a href="#" class="custom__btn-warning me-2">Warning</a>
+                                <a href="#" class="custom__btn-danger me-2">Danger</a>
+                                <a href="#" class="custom__btn-link me-2">Link</a>
+                                <a href="#" class="custom__btn-disable">Disable</a>
+                            </div>
+                            <div class="btn-group element__btns-sample mb-3">
+                                <a href="#" class="custom__btn-default-outline">Default</a>
+                                <a href="#" class="custom__btn-primary-outline me-2">Primary</a>
+                                <a href="#" class="custom__btn-success-outline me-2">Success</a>
+                                <a href="#" class="custom__btn-info-outline me-2">Info</a>
+                                <a href="#" class="custom__btn-warning-outline me-2">Warning</a>
+                                <a href="#" class="custom__btn-danger-outline me-2">Danger</a>
+                                <a href="#" class="custom__btn-link-outline me-2">Link</a>
+                                <a href="#" class="custom__btn-disable-outline">Disable</a>
+                            </div>
+                        </div>
+                        <div class="mb-5">
+                            <div class="btn-group element__btns-sample mb-3">
+                                <a href="#" class="custom__btn-default rounded-1">Default</a>
+                                <a href="#" class="custom__btn-primary me-2 rounded-1">Primary</a>
+                                <a href="#" class="custom__btn-success me-2 rounded-1">Success</a>
+                                <a href="#" class="custom__btn-info me-2 rounded-1">Info</a>
+                                <a href="#" class="custom__btn-warning me-2 rounded-1">Warning</a>
+                                <a href="#" class="custom__btn-danger me-2 rounded-1">Danger</a>
+                                <a href="#" class="custom__btn-link me-2 rounded-1">Link</a>
+                                <a href="#" class="custom__btn-disable rounded-1">Disable</a>
+                            </div>
+                            <div class="btn-group element__btns-sample mb-3">
+                                <a href="#" class="custom__btn-default-outline rounded-1">Default</a>
+                                <a href="#" class="custom__btn-primary-outline me-2 rounded-1">Primary</a>
+                                <a href="#" class="custom__btn-success-outline me-2 rounded-1">Success</a>
+                                <a href="#" class="custom__btn-info-outline me-2 rounded-1">Info</a>
+                                <a href="#" class="custom__btn-warning-outline me-2 rounded-1">Warning</a>
+                                <a href="#" class="custom__btn-danger-outline me-2 rounded-1">Danger</a>
+                                <a href="#" class="custom__btn-link-outline me-2 rounded-1">Link</a>
+                                <a href="#" class="custom__btn-disable-outline rounded-1">Disable</a>
+                            </div>
+                        </div>
+                        <div class="mb-5">
+                            <div class="btn-group element__btns-sample mb-3">
+                                <a href="#" class="custom__btn-default rounded-5">Default</a>
+                                <a href="#" class="custom__btn-primary me-2 rounded-5">Primary</a>
+                                <a href="#" class="custom__btn-success me-2 rounded-5">Success</a>
+                                <a href="#" class="custom__btn-info me-2 rounded-5">Info</a>
+                                <a href="#" class="custom__btn-warning me-2 rounded-5">Warning</a>
+                                <a href="#" class="custom__btn-danger me-2 rounded-5">Danger</a>
+                                <a href="#" class="custom__btn-link me-2 rounded-5">Link</a>
+                                <a href="#" class="custom__btn-disable rounded-5">Disable</a>
+                            </div>
+                            <div class="btn-group element__btns-sample mb-3">
+                                <a href="#" class="custom__btn-default-outline rounded-5">Default</a>
+                                <a href="#" class="custom__btn-primary-outline me-2 rounded-5">Primary</a>
+                                <a href="#" class="custom__btn-success-outline me-2 rounded-5">Success</a>
+                                <a href="#" class="custom__btn-info-outline me-2 rounded-5">Info</a>
+                                <a href="#" class="custom__btn-warning-outline me-2 rounded-5">Warning</a>
+                                <a href="#" class="custom__btn-danger-outline me-2 rounded-5">Danger</a>
+                                <a href="#" class="custom__btn-link-outline me-2 rounded-5">Link</a>
+                                <a href="#" class="custom__btn-disable-outline rounded-5">Disable</a>
+                            </div>
+                        </div>
+                        <div class="mb-5">
+                            <div class="btn-group element__btns-sample mb-3">
+                                <a href="#" class="custom__btn-default arrow rounded-5">Default</a>
+                                <a href="#" class="custom__btn-primary me-2 arrow rounded-5">Primary</a>
+                                <a href="#" class="custom__btn-success me-2 arrow rounded-5">Success</a>
+                                <a href="#" class="custom__btn-info me-2 arrow rounded-5">Info</a>
+                                <a href="#" class="custom__btn-warning me-2 arrow rounded-5">Warning</a>
+                                <a href="#" class="custom__btn-danger me-2 arrow rounded-5">Danger</a>
+                                <a href="#" class="custom__btn-link me-2 arrow rounded-5">Link</a>
+                            </div>
+                            <div class="btn-group element__btns-sample mb-3">
+                                <a href="#" class="custom__btn-default-outline arrow rounded-5">Default</a>
+                                <a href="#" class="custom__btn-primary-outline me-2 arrow rounded-5">Primary</a>
+                                <a href="#" class="custom__btn-success-outline me-2 arrow rounded-5">Success</a>
+                                <a href="#" class="custom__btn-info-outline me-2 arrow rounded-5">Info</a>
+                                <a href="#" class="custom__btn-warning-outline me-2 arrow rounded-5">Warning</a>
+                                <a href="#" class="custom__btn-danger-outline me-2 arrow rounded-5">Danger</a>
+                                <a href="#" class="custom__btn-link-outline me-2 arrow rounded-5">Link</a>
+                            </div>
+                        </div>
+                        <div class="mb-5">
+                            <div class="element__btns-sample mb-3">
+                                <a href="#" class="custom__btn-primary me-2 rounded-0 custom__btn-xl">Extra
+                                    Large</a>
+                                <a href="#" class="custom__btn-success me-2 rounded-0 custom__btn-lg">Large</a>
+                                <a href="#" class="custom__btn-primary me-2 rounded-0">Default</a>
+                                <a href="#" class="custom__btn-success me-2 rounded-0 custom__btn-md">Medium</a>
+                                <a href="#" class="custom__btn-primary me-2 rounded-0 custom__btn-sm">Small</a>
+                            </div>
+                            <div class="element__btns-sample mb-3">
+                                <a href="#" class="custom__btn-primary-outline mx-2 rounded-0 custom__btn-xl">Extra
+                                    Large</a>
+                                <a href="#" class="custom__btn-success-outline mx-2 rounded-0 custom__btn-lg">Large</a>
+                                <a href="#" class="custom__btn-primary-outline mx-2 rounded-0">Default</a>
+                                <a href="#" class="custom__btn-success-outline mx-2 rounded-0 custom__btn-md">Medium</a>
+                                <a href="#" class="custom__btn-primary-outline mx-2 rounded-0 custom__btn-sm">Small</a>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Left Aligned -->
+                    <section class="align__section border-bottom pb-5">
+                        <h3 class="text-purple fs-3 mt-5 mb-4">Left Aligned</h3>
+                        <div class="row mb-5">
+                            <div class="col-md-3">
+                                <img src="./assets/images/element/d.jpg.webp" class="w-100" alt="Aligned ">
+                            </div>
+                            <p class="col-md-9">
+                                Recently, the US Federal government banned online casinos from operating in America
+                                by
+                                making it illegal to transfer money to them through any US bank or payment system.
+                                As a
+                                result of this law, most of the popular online casino networks such as Party Gaming
+                                and
+                                PlayTech left the United States. Overnight, online casino players found themselves
+                                being
+                                chased by the Federal government. But, after a fortnight, the online casino industry
+                                came up with a solution and new online casinos started taking root. These began to
+                                operate under a different business umbrella, and by doing that, rendered the
+                                transfer of
+                                money to and from them legal. A major part of this was enlisting electronic banking
+                                systems that would accept this new clarification and start doing business with me.
+                                Listed in this article are the electronic banking systems that accept players from
+                                the
+                                United States that wish to play in online casinos.
+                            </p>
+                        </div>
+                    </section>
+                    <!-- Right Aligned -->
+                    <section class="align__section border-bottom pb-5 text-end">
+                        <h3 class="text-purple fs-3 mt-5 mb-4">Right Aligned</h3>
+                        <div class="row mb-5">
+                            <p class="col-md-9">
+                                Over time, even the most sophisticated, memory packed computer can begin
+                                to run slow if we
+                                don’t do something to prevent it. The reason why has less to do with how computers are
+                                made
+                                and how they age and
+                                more to do with the way we use them. You see, all of the daily tasks that we do on our
+                                PC
+                                from running programs
+                                to downloading and deleting software can make our computer sluggish. To keep this from
+                                happening, you need to
+                                understand the reasons why your PC is getting slower and do something to keep your PC
+                                running at its best. You
+                                can do this through regular maintenance and PC performance optimization programs
+                            </p>
+                            <div class="col-md-3">
+                                <img src="./assets/images/element/d.jpg.webp" class="w-100" alt="Aligned ">
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Definition -->
+                    <section class="border-bottom pb-5">
+                        <h3 class="text-purple fw-medium fs-3 mt-5 mb-5">Definition</h3>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h4 class="text-purple mb-3">Definition 01</h4>
+                                <p class="text-muted">
+                                    Recently, the US Federal government banned online casinos from operating in America
+                                    by making it illegal to transfer money to them through any US bank or payment
+                                    system. As a result of this law, most of the popular online casino networks
+                                </p>
+                            </div>
+                            <div class="col-md-4">
+                                <h4 class="text-purple mb-3">Definition 02</h4>
+                                <p class="text-muted">
+                                    Recently, the US Federal government banned online casinos from operating in America
+                                    by making it illegal to transfer money to them through any US bank or payment
+                                    system. As a result of this law, most of the popular online casino networks
+                                </p>
+                            </div>
+                            <div class="col-md-4">
+                                <h4 class="text-purple mb-3">Definition 03</h4>
+                                <p class="text-muted">
+                                    Recently, the US Federal government banned online casinos from operating in America
+                                    by making it illegal to transfer money to them through any US bank or payment
+                                    system. As a result of this law, most of the popular online casino networks
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Block Quotes -->
+                    <section class="block__quotes border-bottom pb-5">
+                        <h3 class="text-purple fw-medium fs-3 mt-5 mb-5">Block Quotes</h3>
+                        <div>
+                            <p class="text-black">
+                                “Recently, the US Federal government banned online casinos from operating in America by
+                                making it illegal to transfer money to them through any US bank or payment system. As a
+                                result of this law, most of the popular online casino networks such as Party Gaming and
+                                PlayTech left the United States. Overnight, online casino players found themselves being
+                                chased by the Federal government. But, after a fortnight, the online casino industry
+                                came up with a solution and new online casinos started taking root. These began to
+                                operate under a different business umbrella, and by doing that, rendered the transfer of
+                                money to and from them legal. A major part of this was enlisting electronic banking
+                                systems that would accept this new clarification and start doing business with me.
+                                Listed in this article are the electronic banking”
+                            </p>
+                        </div>
+                    </section>
+                    <!-- Table -->
+                    <section class="border-bottom pb-5 element__table-container">
+                        <h3 class="text-purple fw-medium fs-3 mt-5 mb-4">Table</h3>
+                        <div class="element__table-content">
+                            <div>
+                                <div class="d-lg-flex align-items-lg-center border-bottom pb-3">
+                                    <div class="element__table-th">#</div>
+                                    <div class="element__table-th">Countries</div>
+                                    <div class="element__table-th">Visits</div>
+                                    <div class="element__table-th">Percentages</div>
+                                </div>
+                                <div class="d-lg-flex align-items-lg-center border-bottom py-3">
+                                    <div class="element__table-td">01</div>
+                                    <div class="d-lg-flex align-items-lg-center gap-3 element__table-td">
+                                        <img src="./assets/images/element/f1.jpg.webp" alt="flag">
+                                        <span>Canada</span>
+                                    </div>
+                                    <div class="element__table-td">645032</div>
+                                    <div class="element__table-td">
+                                        <div class="w-75">
+                                            <div class="progress-1 element__progress-blue"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-lg-flex align-items-lg-center border-bottom py-3">
+                                    <div class="element__table-td">02</div>
+                                    <div class="d-lg-flex align-items-lg-center gap-3 element__table-td">
+                                        <img src="./assets/images/element/f2.jpg.webp" alt="flag">
+                                        <span>Canada</span>
+                                    </div>
+                                    <div class="element__table-td">645032</div>
+                                    <div class="element__table-td">
+                                        <div class="w-75">
+                                            <div class="progress-2 element__progress-pink"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-lg-flex align-items-lg-center border-bottom py-3">
+                                    <div class="element__table-td">02</div>
+                                    <div class="d-lg-flex align-items-lg-center gap-3 element__table-td">
+                                        <img src="./assets/images/element/f3.jpg.webp" alt="flag">
+                                        <span>Canada</span>
+                                    </div>
+                                    <div class="element__table-td">645032</div>
+                                    <div class="element__table-td">
+                                        <div class="w-75">
+                                            <div class="progress-3 element__progress-orange"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-lg-flex align-items-lg-center border-bottom py-3">
+                                    <div class="element__table-td">02</div>
+                                    <div class="d-lg-flex align-items-lg-center gap-3 element__table-td">
+                                        <img src="./assets/images/element/f4.jpg.webp" alt="flag">
+                                        <span>Canada</span>
+                                    </div>
+                                    <div class="element__table-td">645032</div>
+                                    <div class="element__table-td">
+                                        <div class="w-75">
+                                            <div class="progress-4 element__progress-green"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-lg-flex align-items-lg-center border-bottom py-3">
+                                    <div class="element__table-td">02</div>
+                                    <div class="d-lg-flex align-items-lg-center gap-3 element__table-td">
+                                        <img src="./assets/images/element/f5.jpg.webp" alt="flag">
+                                        <span>Canada</span>
+                                    </div>
+                                    <div class="element__table-td">645032</div>
+                                    <div class="element__table-td">
+                                        <div class="w-75">
+                                            <div class="progress-5 element__progress-green"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-lg-flex align-items-lg-center border-bottom py-3">
+                                    <div class="element__table-td">02</div>
+                                    <div class="d-lg-flex align-items-lg-center gap-3 element__table-td">
+                                        <img src="./assets/images/element/f6.jpg.webp" alt="flag">
+                                        <span>Canada</span>
+                                    </div>
+                                    <div class="element__table-td">645032</div>
+                                    <div class="element__table-td">
+                                        <div class="w-75">
+                                            <div class="progress-6 element__progress-blue"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-lg-flex align-items-lg-center border-bottom py-3">
+                                    <div class="element__table-td">02</div>
+                                    <div class="d-lg-flex align-items-lg-center gap-3 element__table-td">
+                                        <img src="./assets/images/element/f7.jpg.webp" alt="flag">
+                                        <span>Canada</span>
+                                    </div>
+                                    <div class="element__table-td">645032</div>
+                                    <div class="element__table-td">
+                                        <div class="w-75">
+                                            <div class="progress-7 element__progress-purple"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-lg-flex align-items-lg-center border-bottom py-3">
+                                    <div class="element__table-td">02</div>
+                                    <div class="d-lg-flex align-items-lg-center gap-3 element__table-td">
+                                        <img src="./assets/images/element/f8.jpg.webp" alt="flag">
+                                        <span>Canada</span>
+                                    </div>
+                                    <div class="element__table-td">645032</div>
+                                    <div class="element__table-td">
+                                        <div class="w-75">
+                                            <div class="progress-8 element__progress-pink"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Image Gallery -->
+                    <section class="border-bottom pb-5">
+                        <h3 class="text-purple fw-medium fs-3 mt-5 mb-4">Image Gallery</h3>
+                        <div class="element__gallery row justify-content-center">
+                            <div class="col-md-4 p-3">
+                                <div class="element__gallery-bg-1">
+                                    <a href="assets/img/elements/g1.jpg"></a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 p-3">
+                                <div class="element__gallery-bg-2">
+                                    <a href="assets/img/elements/g2.jpg"></a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 p-3">
+                                <div class="element__gallery-bg-3">
+                                    <a href="assets/img/elements/g3.jpg"></a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 p-3">
+                                <div class="element__gallery-bg-4">
+                                    <a href="assets/img/elements/g4.jpg"></a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 p-3">
+                                <div class="element__gallery-bg-5">
+                                    <a href="assets/img/elements/g5.jpg"></a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 p-3">
+                                <div class="element__gallery-bg-6">
+                                    <a href="assets/img/elements/g6.jpg"></a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 p-3">
+                                <div class="element__gallery-bg-7">
+                                    <a href="assets/img/elements/g7.jpg"></a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 p-3">
+                                <div class="element__gallery-bg-8">
+                                    <a href="assets/img/elements/g8.jpg"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="border-bottom pb-5">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h3 class="text-purple fw-medium fs-3 mt-5 mb-4">Image Gallery</h3>
+                                <div class="element__typograph">
+                                    <h1>This is header 01</h1>
+                                    <h2>This is header 02</h2>
+                                    <h3>This is header 03</h3>
+                                    <h4>This is header 04</h4>
+                                    <h5>This is header 01</h5>
+                                    <h6>This is header 01</h6>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <h3 class="text-purple fw-medium fs-3 mt-lg-5 mt-0 mb-4">Unordered List</h3>
+                                <ul class="element__unordered-list p-0">
+                                    <li>Fta Keys</li>
+                                    <li>For Women Only Your Computer Usage</li>
+                                    <li>Facts Why Inkjet Printing Is Very Appealing
+                                        <ul class="p-0">
+                                            <li>Addiction When Gambling Becomes
+                                                <ul class="p-0">
+                                                    <li>Protective Preventative Maintenance</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>Dealing With Technical Support 10 Useful Tips</li>
+                                    <li>Make Myspace Your Best Designed Space</li>
+                                    <li>Cleaning And Organizing Your Computer</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <h3 class="text-purple fw-medium fs-3 mt-lg-5 mt-0 mb-4">Ordered List</h3>
+                                <div>
+                                    <ol class="element__ordered-list">
+                                        <li>
+                                            <span>Fta Keys</span>
+                                        </li>
+                                        <li>
+                                            <span>For Women Only Your Computer Usage</span>
+                                        </li>
+                                        <li>
+                                            <span>Facts Why Inkjet Printing Is Very Appealing</span>
+                                            <ol class="ordered-list-alpha">
+                                                <li>
+                                                    <span>Addiction When Gambling Becomes</span>
+                                                    <ol class="ordered-list-roman">
+                                                        <li>
+                                                            <span>Protective Preventative Maintenance</span>
+                                                        </li>
+                                                    </ol>
+                                                </li>
+                                            </ol>
+                                        </li>
+                                        <li>
+                                            <span>Dealing With Technical Support 10 Useful Tips</span>
+                                        </li>
+                                        <li>
+                                            <span>Make Myspace Your Best Designed Space</span>
+                                        </li>
+                                        <li>
+                                            <span>Cleaning And Organizing Your Computer</span>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Form Element -->
+                    <section>
+                        <div class="row">
+                            <div class="col-lg-8 col-md-8 element__form">
+                                <h3 class="text-purple fw-medium fs-3 mt-5 mb-4">Form Element</h3>
+                                <form action="#">
+                                    <!-- input -->
+                                    <div class="my-2">
+                                        <input type="text" placeholder="First Name" class="w-100 border-0 px-4">
+                                    </div>
+                                    <!-- input -->
+                                    <div class="my-2">
+                                        <input type="text" placeholder="Last Name" class="w-100 border-0 px-4">
+                                    </div>
+                                    <!-- input -->
+                                    <div class="my-2">
+                                        <input type="text" placeholder="Last Name" class="w-100 border-0 px-4">
+                                    </div>
+                                    <!-- input -->
+                                    <div class="my-2">
+                                        <input type="text" placeholder="Email address" class="w-100 border-0 px-4">
+                                    </div>
+                                    <!-- input -->
+                                    <div class="my-2">
+                                        <input type="text" placeholder="Address" class="w-100 border-0 px-4">
+                                    </div>
+                                    <!-- select input -->
+                                    <div class="my-2 position-relative">
+                                        <i class="fa fa-plane position-absolute top-50 translate-middle-y element__select-left-icon"
+                                            aria-hidden="true"></i>
+                                        <select class="w-100 border-0">
+                                            <option>City</option>
+                                            <option>Dhaka</option>
+                                            <option>Dilli</option>
+                                            <option>Newyork</option>
+                                            <option>Islamabad</option>
+                                        </select>
+                                        <i
+                                            class="fa fa-angle-down position-absolute top-50 end-0 translate-middle element__select-arrow"></i>
+                                    </div>
+                                    <!-- select input -->
+                                    <div class="my-2 position-relative">
+                                        <i class="fa fa-globe position-absolute top-50 translate-middle-y element__select-left-icon"
+                                            aria-hidden="true"></i>
+                                        <select class="w-100 border-0">
+                                            <option>Country</option>
+                                            <option>Dhaka</option>
+                                            <option>Dilli</option>
+                                            <option>Newyork</option>
+                                            <option>Islamabad</option>
+                                        </select>
+                                        <i
+                                            class="fa fa-angle-down position-absolute top-50 end-0 translate-middle element__select-arrow"></i>
+                                    </div>
+                                    <!-- textarea -->
+                                    <div>
+                                        <textarea class="w-100 border-0 px-4" placeholder="Message" rows="3"></textarea>
+                                    </div>
+                                    <!-- input -->
+                                    <div class="my-2">
+                                        <input type="text" placeholder="Primary color" class="w-100 border-0 px-4">
+                                    </div>
+                                    <!-- input -->
+                                    <div class="my-2">
+                                        <input type="text" placeholder="Accent color" class="w-100 border-0 px-4">
+                                    </div>
+                                    <!-- input -->
+                                    <div class="my-2">
+                                        <input type="text" placeholder="Secondary color" class="w-100 border-0 px-4">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-lg-3 col-md-4">
+                                <!-- sample switch -->
+                                <div class="element___sample-switch">
+                                    <h3 class="text-purple fw-medium fs-3 mt-5 mb-4">Switches</h3>
+                                    <div class="mb-3 d-lg-flex justify-content-lg-between pe-3 pe-md-0 text-muted">
+                                        <!-- toggle button -->
+                                        <p class="mb-0">01. Sample Switch</p>
+                                        <div class="position-relative">
+                                            <input type="checkbox" id="default-switch" class="d-none">
+                                            <label for="default-switch"
+                                                class="position-absolute translate-middle top-50 start-50 d-block"></label>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 d-lg-flex justify-content-lg-between pe-3 pe-md-0 text-muted">
+                                        <p class="mb-0">02. Primary Color Switch</p>
+                                        <div class="position-relative">
+                                            <input type="checkbox" id="primary-switch" checked="" class="d-none">
+                                            <label for="primary-switch"
+                                                class="position-absolute translate-middle top-50 start-50 d-block"></label>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 d-lg-flex justify-content-lg-between pe-3 pe-md-0 text-muted">
+                                        <p class="mb-0">03. Confirm Color Switch</p>
+                                        <div class="position-relative">
+                                            <input type="checkbox" id="confirm-switch" checked=""
+                                                class="d-none element__confirm-switch">
+                                            <label for="confirm-switch"
+                                                class="position-absolute translate-middle top-50 start-50 d-block"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Selectboxes -->
+                                <div class="element___selectbox">
+                                    <h3 class="text-purple fw-medium fs-3 mt-5 mb-4">Selectboxes</h3>
+                                    <div class="position-relative">
+                                        <select class="w-100 border-0 py-2 px-3">
+                                            <option>English</option>
+                                            <option>Spanish</option>
+                                            <option>Arabic</option>
+                                            <option>Portuguise</option>
+                                            <option>Bengali</option>
+                                        </select>
+                                        <i
+                                            class="fa fa-angle-down position-absolute top-50 end-0 translate-middle element__select-arrow"></i>
+                                    </div>
+                                </div>
+                                <!-- Checkboxes -->
+                                <div class="element__ckeckboxes">
+                                    <h3 class="text-purple fw-medium fs-3 mt-5 mb-4">Checkboxes</h3>
+                                    <div class="d-lg-flex justify-content-lg-between">
+                                        <p class="text-muted">01. Sample Checkbox</p>
+                                        <div class="element__checkbox-container default__checkbox">
+                                            <input type="checkbox" id="default-checkbox">
+                                            <label for="default-checkbox"></label>
+                                        </div>
+                                    </div>
+                                    <div class="d-lg-flex justify-content-lg-between">
+                                        <p class="text-muted">02. Primary Color Checkbox</p>
+                                        <div class="element__checkbox-container default__checkbox">
+                                            <input type="checkbox" id="primary-checkbox" checked="">
+                                            <label for="primary-checkbox"></label>
+                                        </div>
+                                    </div>
+                                    <div class="d-lg-flex justify-content-lg-between">
+                                        <p class="text-muted">03. Confirm Color Checkbox</p>
+                                        <div class="element__checkbox-container confirm__checkbox">
+                                            <input type="checkbox" id="confirm-checkbox">
+                                            <label for="confirm-checkbox"></label>
+                                        </div>
+                                    </div>
+                                    <div class="d-lg-flex justify-content-lg-between">
+                                        <p class="text-muted">04. Disabled Checkbox</p>
+                                        <div class="element__checkbox-container disabled__checkbox">
+                                            <input type="checkbox" id="disabled-checkbox" disabled="">
+                                            <label for="disabled-checkbox"></label>
+                                        </div>
+                                    </div>
+                                    <div class="d-lg-flex justify-content-lg-between">
+                                        <p class="text-muted">05. Disabled Checkbox active</p>
+                                        <div class="element__checkbox-container disabled__checkbox">
+                                            <input type="checkbox" id="disabled-checkbox-active" checked="" disabled="">
+                                            <label for="disabled-checkbox-active"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- radios -->
+                                <div class="mt-5">
+                                    <h3 class="text-purple fw-medium fs-3 mt-5 mb-4">Radios</h3>
+                                    <div class="d-lg-flex justify-content-lg-between">
+                                        <p class="text-muted">01. Sample radio</p>
+                                        <div class="element__checkbox-container element__radio element__radio-primary">
+                                            <input type="checkbox" id="default-radio">
+                                            <label for="default-radio"></label>
+                                        </div>
+                                    </div>
+                                    <div class="d-lg-flex justify-content-lg-between">
+                                        <p class="text-muted">02. Primary Color radio</p>
+                                        <div class="element__checkbox-container element__radio element__radio-primary">
+                                            <input type="checkbox" id="primary-radio" checked="">
+                                            <label for="primary-radio"></label>
+                                        </div>
+                                    </div>
+                                    <div class="d-lg-flex justify-content-lg-between">
+                                        <p class="text-muted">03. Confirm Color radio</p>
+                                        <div class="element__checkbox-container element__radio element__radio-confirm">
+                                            <input type="checkbox" id="confirm-radio" checked="">
+                                            <label for="confirm-radio"></label>
+                                        </div>
+                                    </div>
+                                    <div class="d-lg-flex justify-content-lg-between">
+                                        <p class="text-muted">04. Disabled radio</p>
+                                        <div class="element__checkbox-container element__radio disabled__radio">
+                                            <input type="checkbox" id="disabled-radio" disabled="">
+                                            <label for="disabled-radio"></label>
+                                        </div>
+                                    </div>
+                                    <div class="d-lg-flex justify-content-lg-between">
+                                        <p class="text-muted">05. Disabled radio active</p>
+                                        <div class="element__checkbox-container element__radio disabled__radio">
+                                            <input type="checkbox" id="disabled-radio-active" checked="" disabled="">
+                                            <label for="disabled-radio-active"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="container pt-5">
+                <div class="row justify-content-lg-between pt-5">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                        <div class="mb-5">
+                            <div class="footer-logo mb-5">
+                                <a href="index.html"><img src="./assets/images/logo/logo2_footer.png.webp"
+                                        alt="footer logo"></a>
+                            </div>
+                            <div class="footer-tittle mb-5">
+                                <span class="d-block mt-4 mb-5">Subscribe our newsletter to get updates about our
+                                    services</span>
+                            </div>
+
+                            <form action="#" class="d-lg-flex flex-column gap-4">
+                                <input type="email" placeholder="Email Address"
+                                    class="text-center text-white bg-transparent">
+                                <button class="border-0 text-white">Subscribe</button>
+                            </form>
+                            <div class="d-lg-flex mt-5 gap-3 footer__socials">
+                                <a href="#"
+                                    class="d-lg-flex justify-content-center align-items-lg-center text-white p-2 rounded-pill">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#"
+                                    class="d-lg-flex justify-content-center align-items-lg-center text-white p-2 rounded-pill">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#"
+                                    class="d-lg-flex justify-content-center align-items-lg-center text-white p-2 rounded-pill">
+                                    <i class="fab fa-pinterest-p"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1"></div>
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-5">
+                        <h3 class="text-white fw-medium">Company</h3>
+                        <ul class="ps-0 mt-4">
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Why choose us</a>
+                            </li>
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Review</a>
+                            </li>
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Customers</a>
+                            </li>
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Blog</a>
+                            </li>
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Carrier</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-5">
+                        <h3 class="text-white fw-medium">Products</h3>
+                        <ul class="ps-0 mt-4">
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Why choose us</a>
+                            </li>
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Review</a>
+                            </li>
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Customers</a>
+                            </li>
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Blog</a>
+                            </li>
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Carrier</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-5">
+                        <h3 class="text-white fw-medium">Support</h3>
+                        <ul class="ps-0 mt-4">
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Technology</a>
+                            </li>
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Products</a>
+                            </li>
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Customers</a>
+                            </li>
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Quality</a>
+                            </li>
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Sales geography</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="mb-0 text-white-50 text-center py-5 mt-4">
+                    Copyright ©2024 All rights reserved | This template is made with
+                    <i class="text-white fa fa-heart"></i>
+                    by
+                    <a href="#" class="text-white fw-medium">Colorlib</a>
+                </p>
+            </div>
+        </footer>
+
+        <a href="#" class="level-up-btn position-fixed z-3">
+            <i
+                class="fa fa-level-up-alt text-white d-lg-flex justify-content-center align-items-lg-center rounded-pill"></i>
+        </a>
+    </body>
+
+</html>

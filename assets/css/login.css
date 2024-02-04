@@ -1,0 +1,63 @@
+@import "bootstrap.css";
+@import "reset.css";
+@import "variables.css";
+@import "utilities.css";
+@import "header.css";
+@import "footer.css";
+
+
+.video__container {
+  height: 100vh;
+  overflow: hidden;
+}
+.video__container video {
+  width: 1540px;
+}
+.login__form {
+  width: 480px;
+  background: rgba(0, 0, 0, 0.4);
+}
+.login__form h2 {
+  margin-top: 3rem;
+}
+.login__form-logo {
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.7);
+}
+.login__form-logo img {
+  width: 60px;
+  height: 60px;
+}
+.login__form input {
+  outline: none;
+}
+.login__form input::placeholder {
+  color: var(--pink-color);
+}
+.login__form button {
+  background-color: var(--pink-color);
+  font-size: 18px;
+}
+.login__form a {
+  color: var(--pink-color);
+  font-family: "Open Sans", sans-serif;
+}
+
+
+/* --------------------------------- Responsive ---------------------------------- */
+
+/* Tablet */
+@media (max-width: 769px) {
+  .login__form h2 {
+    margin-top: 5rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 577px) {
+  .login__form {
+    width: 70%;
+  }
+  .login__form h2 {
+    margin-top: 7rem;
+  }
+}

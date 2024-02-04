@@ -1,0 +1,148 @@
+@import "bootstrap.css";
+@import "reset.css";
+@import "variables.css";
+@import "utilities.css";
+@import "header.css";
+@import "footer.css";
+
+/* --------------------------------- main ---------------------------------- */
+.bg-purple {
+  background-color: var(--primary-color);
+}
+
+/* choose plan */
+.choose__plan {
+  padding: 3rem 0 25rem 0;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.choose__plan::before {
+  content: "";
+  position: absolute;
+  top: 85%;
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  left: -10rem;
+  z-index: -1;
+  width: 250%;
+  height: 10rem;
+  background-color: white;
+}
+.choose__plan p {
+  color: var(--text-gray--color);
+  font-size: 18px;
+}
+.choose__plan-card {
+  box-shadow: 0 8px 26px rgba(67, 40, 124, 0.08);
+}
+.choose__plan-card h4 > span {
+  color: #838a9b;
+  font-size: 12px;
+}
+.choose__plan-card > div h4:nth-child(4)::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #e7e6eb;
+  left: 0;
+  bottom: 0;
+}
+.choose__plan-card-list {
+  color: #717081;
+}
+.choose__plan-card-list li {
+  padding: 1rem 0;
+}
+.choose__plan-card a {
+  border: 1px solid var(--pink-color);
+  color: var(--pink-color);
+  transition: 0.5s;
+  padding: 10px 64px;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.choose__plan-card:hover a {
+  border: 1px solid var(--pink-color);
+  color: #fff;
+  background: linear-gradient(to bottom, #a077ff 0%, #ef67ff 100%);
+}
+/* global server */
+.global__server {
+  margin-top: 34rem;
+}
+.global__server h2,
+.dedicated__server h2,
+.most__amazing h2,
+.choose__plan h2,
+.ask__questions h2 {
+  font-size: 44px;
+}
+.global__server p,
+.dedicated__server p {
+  text-align: justify;
+}
+.global__server > div > div:nth-child(2),
+.dedicated__server > div > div:nth-child(1) {
+  padding-left: 50px;
+}
+.global__server > div > div:nth-child(2) p,
+.dedicated__server > div > div:nth-child(1) p {
+  color: #646d77;
+}
+
+/* --------------------------------- Responsive ---------------------------------- */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .choose__plan {
+    padding: 0 0 12rem 0;
+  }
+  .global__server {
+    margin-top: 80rem;
+  }
+  .global__server > div > div:nth-child(2),
+  .dedicated__server > div > div:nth-child(1) {
+    padding-left: 0;
+  }
+  .dedicated__server {
+    margin-top: 5rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 577px) {
+  .choose__plan {
+    padding: 0 0 12rem 0;
+  }
+  .choose__plan h2 {
+    font-size: 30px;
+  }
+  .most__amazing h2,
+  .global__server h2,
+  .ask__questions h2,
+  .dedicated__server h2 {
+    font-size: 24px;
+  }
+  .choose__plan p {
+    font-size: 15px;
+  }
+  .global__server {
+    margin-top: 125rem;
+  }
+  .global__server > div > div:nth-child(2),
+  .dedicated__server > div > div:nth-child(1) {
+    padding-left: 15px;
+  }
+  .global__server p,
+  .dedicated__server p {
+    text-align: left;
+    font-size: 15px;
+  }
+}

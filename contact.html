@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Eco-hosting</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="./assets/css/contact.css">
+    </head>
+
+    <body>
+        <!-- header -->
+        <header class="header bg-purple">
+            <div
+                class="bg-transparent position-relative top-0 z-3 start-0 end-0 px-md-5 d-lg-flex justify-content-lg-between align-items-lg-center align-items-stretch flex-lg-row flex-column">
+                <div class="ms-lg-0 ms-4 pt-2">
+                    <a href="./index.html">
+                        <img src="./assets/images/logo/logo.png.webp" alt="Eco-hosting">
+                    </a>
+                </div>
+                <nav class="d-sm-none d-md-none d-none d-lg-block">
+                    <ul class="d-lg-flex align-items-lg-center my-lg-0 me-lg-3">
+                        <li>
+                            <a href="./index.html" class="nav-link">HOME</a>
+                        </li>
+                        <li>
+                            <a href="./packages.html" class="nav-link">PACKAGES</a>
+                        </li>
+                        <li>
+                            <a href="./help.html" class="nav-link">HELP</a>
+                        </li>
+                        <li class="position-relative">
+                            <a href="./blog.html" class="nav-link">BLOG</a>
+                            <ul class="position-absolute start-0 ps-0 py-3 submenu">
+                                <li>
+                                    <a href="./blog.html" class="text-white">BLOG</a>
+                                </li>
+                                <li>
+                                    <a href="./blog_details.html" class="text-white">BLOG DETAILS</a>
+                                </li>
+                                <li>
+                                    <a href="./elements.html" class="text-white">ELEMENT</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./contact.html" class="nav-link">CONTACT</a>
+                        </li>
+                        <li>
+                            <a href="./register.html" class="custom-btn py-lg-3 px-lg-5 rounded-5">SIGN
+                                UP</a>
+                        </li>
+                        <li>
+                            <a href="./login.html" class="nav-link">SIGN IN</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="position-relative d-lg-none py-3 text-end pe-4 header__mobile-nav">
+                    <input type="checkbox" id="default-switch" class="d-none">
+                    <label for="default-switch" class="py-1 px-2 rounded-1 text-white" role="button">
+                        <span>MENU</span>
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+                    <ul class="position-absolute top-100 start-0 my-lg-0 me-lg-3 w-100 text-white text-start px-4 pb-3">
+                        <li>
+                            <a href="./index.html" class="nav-link py-2 px-2 fw-medium rounded-1">Home</a>
+                        </li>
+                        <li>
+                            <a href="./packages.html" class="nav-link py-2 px-2 fw-medium rounded-1">Packages</a>
+                        </li>
+                        <li>
+                            <a href="./help.html" class="nav-link py-2 px-2 fw-medium rounded-1">Help</a>
+                        </li>
+                        <li class="position-relative">
+                            <input type="checkbox" id="blog-switch" class="d-none">
+                            <label for="blog-switch" class="py-1 d-block px-2 rounded-1 text-white" role="button">
+                                <span class="blog__plus">Blog &nbsp; +</span>
+                                <span class="blog__minus d-none">Blog &nbsp; -</span>
+                            </label>
+                            <!-- <a href="#" class="nav-link py-2 px-2 fw-medium rounded-1"></a> -->
+                            <ul class="py-1 blog__submenu">
+                                <li>
+                                    <a href="./blog.html" class="py-1 nav-link ps-2 fw-medium rounded-1">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="./blog_details.html" class="py-1 nav-link ps-2 fw-medium rounded-1">Blog
+                                        Details</a>
+                                </li>
+                                <li>
+                                    <a href="./elements.html" class="py-1 nav-link ps-2 fw-medium rounded-1">Element</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./contact.html" class="nav-link py-2 px-2 fw-medium rounded-1">Contact</a>
+                        </li>
+                        <li class="my-4">
+                            <a href="./register.html" class="custom-btn py-3 px-5 rounded-5">Sign Up</a>
+                        </li>
+                        <li>
+                            <a href="./login.html" class="nav-link py-2 px-2 fw-medium rounded-1">Sign In</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- main -->
+        <main>
+            <div class="position-absolute top-0 start-0 z-2 d-md-block d-none" d-lg-block d-none>
+                <img src="./assets/images/hero/top-left-shape.png.webp" alt="top left shape">
+            </div>
+            <!-- contact us -->
+            <div class="bg-purple help__center">
+                <h2 class="text-white fw-bold text-center">Contact us</h2>
+            </div>
+
+            <!-- wrong -->
+            <div class="wrong__box">
+                <div class="container">
+                    <div class="d-md-flex justify-content-md-center flex-md-column align-items-md-center d-none">
+                        <img src="./assets/images/icon/icon_error.png" alt="error icon">
+                        <span class="fs-4 d-block mt-3 mb-4">Oops! Something went wrong.</span>
+                        <p>
+                            This page didn't load Google Maps correctly. See the JavaScript console for technical
+                            details.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- form -->
+            <div class="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="contact__title fw-semibold text-purple mb-4">Get in Touch</h2>
+                        </div>
+                        <div class="col-lg-8">
+                            <form action="#">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="col-sm-12">
+                                            <textarea class="form-control w-100" cols="30" rows="9"
+                                                placeholder="Enter Message"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 my-4">
+                                        <div>
+                                            <input class="form-control py-3" type="text" placeholder="Enter your name">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 my-4">
+                                        <div>
+                                            <input class="form-control py-3" type="email" placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-4">
+                                        <div>
+                                            <input class="form-control py-3" type="text" placeholder="Enter Subject">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <button class="pink-btn px-5 py-3">SEND</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-lg-3 offset-lg-1 mt-5 mt-lg-0">
+                            <div class="d-lg-flex align-items-lg-start gap-3">
+                                <span>
+                                    <i class="fa-solid fa-house"></i> 
+                                </span>
+                                <div class="mb-3">
+                                    <h3 class="fs-6 mb-0 text-black">Buttonwood, California.</h3>
+                                    <p>Rosemead, CA 91770</p>
+                                </div>
+                            </div>
+                            <div class="d-lg-flex align-items-lg-start gap-3">
+                                <span>
+                                    <i class="fa fa-tablet-alt"></i>
+                                </span>
+                                <div class="mb-3">
+                                    <h3 class="fs-6 mb-0 text-black">+1 253 565 2365</h3>
+                                    <p>Mon to Fri 9am to 6pm</p>
+                                </div>
+                            </div>
+                            <div class="d-lg-flex align-items-lg-start gap-3">
+                                <span>
+                                    <i class="fa-regular fa-envelope"></i>
+                                </span>
+                                <div class="mb-3">
+                                    <h3 class="fs-6 mb-0 text-black">support@colorlib.com</h3>
+                                    <p>Send us your query anytime!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="container pt-5">
+                <div class="row justify-content-lg-between pt-5">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                        <div class="mb-5">
+                            <div class="footer-logo mb-5">
+                                <a href="index.html"><img src="./assets/images/logo/logo2_footer.png.webp"
+                                        alt="footer logo"></a>
+                            </div>
+                            <div class="footer-tittle mb-5">
+                                <span class="d-block mt-4 mb-5">Subscribe our newsletter to get updates about our
+                                    services</span>
+                            </div>
+
+                            <form action="#" class="d-lg-flex flex-column gap-4">
+                                <input type="email" placeholder="Email Address"
+                                    class="text-center text-white bg-transparent">
+                                <button class="border-0 text-white">Subscribe</button>
+                            </form>
+                            <div class="d-lg-flex mt-5 gap-3 footer__socials">
+                                <a href="#"
+                                    class="d-lg-flex justify-content-center align-items-lg-center text-white p-2 rounded-pill">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#"
+                                    class="d-lg-flex justify-content-center align-items-lg-center text-white p-2 rounded-pill">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#"
+                                    class="d-lg-flex justify-content-center align-items-lg-center text-white p-2 rounded-pill">
+                                    <i class="fab fa-pinterest-p"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1"></div>
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-5">
+                        <h3 class="text-white fw-medium">Company</h3>
+                        <ul class="ps-0 mt-4">
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Why choose us</a>
+                            </li>
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Review</a>
+                            </li>
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Customers</a>
+                            </li>
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Blog</a>
+                            </li>
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Carrier</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-5">
+                        <h3 class="text-white fw-medium">Products</h3>
+                        <ul class="ps-0 mt-4">
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Why choose us</a>
+                            </li>
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Review</a>
+                            </li>
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Customers</a>
+                            </li>
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Blog</a>
+                            </li>
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Carrier</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-5">
+                        <h3 class="text-white fw-medium">Support</h3>
+                        <ul class="ps-0 mt-4">
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Technology</a>
+                            </li>
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Products</a>
+                            </li>
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Customers</a>
+                            </li>
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Quality</a>
+                            </li>
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Sales geography</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="mb-0 text-white-50 text-center py-5 mt-4">
+                    Copyright ©2024 All rights reserved | This template is made with
+                    <i class="text-white fa fa-heart"></i>
+                    by
+                    <a href="#" class="text-white fw-medium">Colorlib</a>
+                </p>
+            </div>
+        </footer>
+
+        <a href="#" class="level-up-btn position-fixed z-3">
+            <i class="fa fa-level-up-alt text-white d-lg-flex justify-content-center align-items-lg-center rounded-pill"></i>
+        </a>
+    </body>
+
+</html>

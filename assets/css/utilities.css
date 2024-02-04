@@ -1,0 +1,329 @@
+/* custom button */
+.custom-btn {
+  position: relative;
+  background: linear-gradient(to bottom, #a077ff 0%, #ef67ff 100%);
+  color: #fff;
+}
+.custom-btn:hover {
+  color: #fff !important;
+}
+.custom-btn::after {
+  content: "";
+  height: 100%;
+  width: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.07);
+  left: 0;
+  top: 0;
+  border-radius: inherit;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+  -webkit-border-radius: inherit;
+  -moz-border-radius: inherit;
+  -ms-border-radius: inherit;
+  -o-border-radius: inherit;
+}
+.custom-btn:hover::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  border-radius: inherit;
+  background-color: rgba(0, 0, 0, 0.07);
+  left: 0;
+  top: 0;
+  -webkit-border-radius: inherit;
+  -moz-border-radius: inherit;
+  -ms-border-radius: inherit;
+  -o-border-radius: inherit;
+}
+.level-up-btn {
+  right: 30px;
+  bottom: 15px;
+}
+.level-up-btn i {
+  width: 50px;
+  height: 50px;
+  background-color: var(--pink-color);
+  font-size: 1.2rem;
+}
+.pink-btn {
+  border: 1px solid var(--pink-color);
+  cursor: pointer;
+  background-color: #fff;
+  letter-spacing: 3px;
+  font-size: 14px;
+  color: var(--pink-color);
+  font-family: "Poppins", sans-serif;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.pink-btn:hover {
+  background-color: var(--pink-color);
+  color: #fff;
+}
+.custom__btn-default,
+.custom__btn-primary,
+.custom__btn-success,
+.custom__btn-info,
+.custom__btn-warning,
+.custom__btn-danger,
+.custom__btn-link,
+.custom__btn-disable,
+.custom__btn-default-outline,
+.custom__btn-primary-outline,
+.custom__btn-success-outline,
+.custom__btn-info-outline,
+.custom__btn-warning-outline,
+.custom__btn-danger-outline,
+.custom__btn-link-outline,
+.custom__btn-disable-outline {
+  padding: 0 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  outline: none;
+  line-height: 40px;
+}
+.custom__btn-default {
+  color: #415094;
+  background-color: #f9f9ff;
+}
+.custom__btn-primary {
+  color: #fff;
+  background-color: #1f2b7b;
+}
+.custom__btn-success {
+  color: #fff;
+  background-color: #4cd3e3;
+}
+.custom__btn-info {
+  color: #fff;
+  background-color: #38a4ff;
+}
+.custom__btn-warning {
+  color: #fff;
+  background-color: #f4e700;
+}
+.custom__btn-danger {
+  color: #fff;
+  background-color: #f44a40;
+}
+.custom__btn-link {
+  color: #415094;
+  text-decoration: underline;
+  background-color: #f9f9ff;
+}
+.custom__btn-disable {
+  color: #fff;
+  background-color: #f9f9ff;
+  cursor: not-allowed;
+}
+.custom__btn-default:hover {
+  border: 1px solid #f9f9ff;
+  background: #fff;
+}
+.custom__btn-primary:hover {
+  color: #1f2b7b;
+  border: 1px solid #1f2b7b;
+  background: #fff;
+}
+.custom__btn-success:hover {
+  color: #4cd3e3;
+  border: 1px solid #4cd3e3;
+  background: #fff;
+}
+.custom__btn-info:hover {
+  color: #38a4ff;
+  border: 1px solid #38a4ff;
+  background: #fff;
+}
+.custom__btn-warning:hover {
+  color: #f4e700;
+  border: 1px solid #f4e700;
+  background: #fff;
+}
+.custom__btn-danger:hover {
+  color: #f44a40;
+  border: 1px solid #f44a40;
+  background: #fff;
+}
+.custom__btn-link:hover {
+  color: #415094;
+  border: 1px solid #f9f9ff;
+  background: #fff;
+}
+.custom__btn-disable:hover {
+  color: #fff;
+  background-color: #f9f9ff;
+}
+
+/* btn outline */
+.custom__btn-default-outline {
+  border: 1px solid #f9f9ff;
+  color: #fff;
+  background: #fff;
+}
+.custom__btn-primary-outline {
+  color: #1f2b7b;
+  border: 1px solid #1f2b7b;
+  background: #fff;
+}
+.custom__btn-success-outline {
+  color: #4cd3e3;
+  border: 1px solid #4cd3e3;
+  background: #fff;
+}
+.custom__btn-info-outline {
+  color: #38a4ff;
+  border: 1px solid #38a4ff;
+  background: #fff;
+}
+.custom__btn-warning-outline {
+  color: #f4e700;
+  border: 1px solid #f4e700;
+  background: #fff;
+}
+.custom__btn-danger-outline {
+  color: #f44a40;
+  border: 1px solid #f44a40;
+  background: #fff;
+}
+.custom__btn-link-outline {
+  color: #415094;
+  border: 1px solid #f9f9ff;
+  background: #fff;
+}
+.custom__btn-disable-outline {
+  color: #fff;
+  background-color: #f9f9ff;
+}
+.custom__btn-default-outline:hover {
+  color: #415094;
+  background-color: #f9f9ff;
+}
+.custom__btn-primary-outline:hover {
+  color: #fff;
+  background-color: #1f2b7b;
+}
+.custom__btn-success-outline:hover {
+  color: #fff;
+  background-color: #4cd3e3;
+}
+.custom__btn-info-outline:hover {
+  color: #fff;
+  background-color: #38a4ff;
+}
+.custom__btn-warning-outline:hover {
+  color: #fff;
+  background-color: #f4e700;
+}
+.custom__btn-danger-outline:hover {
+  color: #fff;
+  background-color: #f44a40;
+}
+.custom__btn-link-outline:hover {
+  color: #415094;
+  background-color: #f9f9ff;
+}
+.custom__btn-disable-outline:hover {
+  color: #fff;
+  background-color: #f9f9ff;
+  cursor: not-allowed;
+}
+
+/* button size */
+
+.custom__btn-xl {
+  padding: 0 40px;
+  height: 50px;
+}
+.custom__btn-lg {
+  height: 45px;
+}
+.custom__btn-md {
+  height: 30px;
+}
+.custom__btn-sm {
+  height: 25px;
+}
+
+/* custom background */
+.bg-purple {
+  background-color: var(--primary-color);
+}
+.custom-bg {
+  position: relative;
+  background-color: var(--primary-color);
+  margin-top: 10rem;
+  z-index: 1;
+  overflow-x: hidden;
+}
+.custom-bg::after {
+  position: absolute;
+  content: "";
+  background-color: #fff;
+  z-index: -1;
+  width: 200%;
+  height: 20vh;
+  top: -1rem;
+  left: -10rem;
+  transform: rotate(2deg);
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+  -o-transform: rotate(2deg);
+}
+
+.bg-light-pink {
+  background-color: #fbf9ff;
+  padding: 25px;
+}
+
+/* custom text */
+.text-purple {
+  color: var(--second-color);
+}
+.custom-link:hover {
+  color: var(--pink-color) !important;
+}
+
+
+/* --------------------------------- Responsive ---------------------------------- */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .custom__btn-default,
+.custom__btn-primary,
+.custom__btn-success,
+.custom__btn-info,
+.custom__btn-warning,
+.custom__btn-danger,
+.custom__btn-link,
+.custom__btn-disable,
+.custom__btn-default-outline,
+.custom__btn-primary-outline,
+.custom__btn-success-outline,
+.custom__btn-info-outline,
+.custom__btn-warning-outline,
+.custom__btn-danger-outline,
+.custom__btn-link-outline,
+.custom__btn-disable-outline {
+  padding: 0 30px;
+  margin-left: 5px;
+}
+}
+
+@media (max-width: 769px) {
+  .custom-bg {
+    margin-top: 1rem;
+  }
+}

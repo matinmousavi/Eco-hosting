@@ -1,0 +1,32 @@
+@keyframes open-navbar {
+    from {
+      height: 0;
+    }
+    to {
+      height: 300px;
+    }
+  }
+  @keyframes close-navbar {
+    from {
+      height: 300px;
+    }
+    to {
+      height: 0;
+    }
+  }
+  @keyframes open-submenu {
+    from {
+      height: 0;
+    }
+    to {
+      height: 85px;
+    }
+  }
+  @keyframes close-submenu {
+    from {
+      height: 85px;
+    }
+    to {
+      height: 0;
+    }
+  }

@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Eco-hosting</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="./assets/css/blog.css">
+    </head>
+
+    <body>
+        <!-- header -->
+        <header class="header bg-purple">
+            <div
+                class="bg-transparent position-relative top-0 z-3 start-0 end-0 px-md-5 d-lg-flex justify-content-lg-between align-items-lg-center align-items-stretch flex-lg-row flex-column">
+                <div class="ms-lg-0 ms-4 pt-2">
+                    <a href="./index.html">
+                        <img src="./assets/images/logo/logo.png.webp" alt="Eco-hosting">
+                    </a>
+                </div>
+                <nav class="d-sm-none d-md-none d-none d-lg-block">
+                    <ul class="d-lg-flex align-items-lg-center my-lg-0 me-lg-3">
+                        <li>
+                            <a href="./index.html" class="nav-link">HOME</a>
+                        </li>
+                        <li>
+                            <a href="./packages.html" class="nav-link">PACKAGES</a>
+                        </li>
+                        <li>
+                            <a href="./help.html" class="nav-link">HELP</a>
+                        </li>
+                        <li class="position-relative">
+                            <a href="./blog.html" class="nav-link">BLOG</a>
+                            <ul class="position-absolute start-0 ps-0 py-3 submenu">
+                                <li>
+                                    <a href="./blog.html" class="text-white">BLOG</a>
+                                </li>
+                                <li>
+                                    <a href="./blog_details.html" class="text-white">BLOG DETAILS</a>
+                                </li>
+                                <li>
+                                    <a href="./elements.html" class="text-white">ELEMENT</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./contact.html" class="nav-link">CONTACT</a>
+                        </li>
+                        <li>
+                            <a href="./register.html" class="custom-btn py-lg-3 px-lg-5 rounded-5">SIGN
+                                UP</a>
+                        </li>
+                        <li>
+                            <a href="./login.html" class="nav-link">SIGN IN</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="position-relative d-lg-none py-3 text-end pe-4 header__mobile-nav">
+                    <input type="checkbox" id="default-switch" class="d-none">
+                    <label for="default-switch" class="py-1 px-2 rounded-1 text-white" role="button">
+                        <span>MENU</span>
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+                    <ul class="position-absolute top-100 start-0 my-lg-0 me-lg-3 w-100 text-white text-start px-4 pb-3">
+                        <li>
+                            <a href="./index.html" class="nav-link py-2 px-2 fw-medium rounded-1">Home</a>
+                        </li>
+                        <li>
+                            <a href="./packages.html" class="nav-link py-2 px-2 fw-medium rounded-1">Packages</a>
+                        </li>
+                        <li>
+                            <a href="./help.html" class="nav-link py-2 px-2 fw-medium rounded-1">Help</a>
+                        </li>
+                        <li class="position-relative">
+                            <input type="checkbox" id="blog-switch" class="d-none">
+                            <label for="blog-switch" class="py-1 d-block px-2 rounded-1 text-white" role="button">
+                                <span class="blog__plus">Blog &nbsp; +</span>
+                                <span class="blog__minus d-none">Blog &nbsp; -</span>
+                            </label>
+                            <!-- <a href="#" class="nav-link py-2 px-2 fw-medium rounded-1"></a> -->
+                            <ul class="py-1 blog__submenu">
+                                <li>
+                                    <a href="./blog.html" class="py-1 nav-link ps-2 fw-medium rounded-1">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="./blog_details.html" class="py-1 nav-link ps-2 fw-medium rounded-1">Blog
+                                        Details</a>
+                                </li>
+                                <li>
+                                    <a href="./elements.html" class="py-1 nav-link ps-2 fw-medium rounded-1">Element</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./contact.html" class="nav-link py-2 px-2 fw-medium rounded-1">Contact</a>
+                        </li>
+                        <li class="my-4">
+                            <a href="./register.html" class="custom-btn py-3 px-5 rounded-5">Sign Up</a>
+                        </li>
+                        <li>
+                            <a href="./login.html" class="nav-link py-2 px-2 fw-medium rounded-1">Sign In</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- main -->
+        <main>
+            <div class="position-absolute top-0 start-0 z-2 d-md-block d-none" d-lg-block d-none>
+                <img src="./assets/images/hero/top-left-shape.png.webp" alt="top left shape">
+            </div>
+            <!-- blog -->
+            <div class="bg-purple help__center">
+                <h2 class="text-white fw-bold text-center">Blog</h2>
+            </div>
+            <div class="container">
+                <div class="row my-5">
+                    <!-- blog info -->
+                    <div class="col-lg-8 my-lg-4">
+                        <div class="pe-3">
+                            <div class="blog__info pb-2 mb-5">
+                                <div class="position-relative">
+                                    <img class="w-100" src="./assets/images/blog/single_blog_1.png.webp"
+                                        alt="single blog image">
+                                    <div
+                                        class="d-lg-flex flex-column py-2 align-items-lg-center rounded-2 blog__info-date">
+                                        <span class="fw-bold fs-4">15</span>
+                                        <span class="fw-medium fs-5">Jan</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <a href="#" class="d-block mt-5 py-3 text-dark fw-semibold custom-link">Google
+                                        inks pact
+                                        for
+                                        new
+                                        35-storey office</a>
+                                    <p class="text-muted">
+                                        That dominion stars lights dominion divide years for fourth have don't stars is
+                                        that
+                                        he
+                                        earth it first without heaven in place seed it second morning saying.
+                                    </p>
+                                    <div class="row my-4 align-items-lg-center blog__info-links">
+                                        <div
+                                            class="col-6 col-md-4 col-lg-3 gap-2 gap-md-2 d-lg-flex align-items-lg-center justify-content-lg-start px-0 gap-lg-2">
+                                            <i class="fa fa-user"></i>
+                                            <span>Travel, Lifestyle</span>
+                                        </div>
+                                        <div
+                                            class="col-6 col-md-4 col-lg-3 gap-2 gap-md-2 d-lg-flex align-items-lg-center justify-content-lg-start px-0 gap-lg-2 ps-lg-3 ps-2 ps-md-1">
+                                            <i class="fa fa-comments"></i>
+                                            <span>03 Comments</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog__info pb-2 mb-5">
+                                <div class="position-relative">
+                                    <img class="w-100" src="./assets/images/blog/single_blog_2.png.webp"
+                                        alt="single blog image">
+                                    <div
+                                        class="d-lg-flex flex-column py-2 align-items-lg-center rounded-2 blog__info-date">
+                                        <span class="fw-bold fs-4">15</span>
+                                        <span class="fw-medium fs-5">Jan</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <a href="#" class="d-block mt-5 py-3 text-dark fw-semibold custom-link">Google
+                                        inks pact
+                                        for
+                                        new
+                                        35-storey office</a>
+                                    <p class="text-muted">
+                                        That dominion stars lights dominion divide years for fourth have don't stars is
+                                        that
+                                        he
+                                        earth it first without heaven in place seed it second morning saying.
+                                    </p>
+                                    <div class="row my-4 align-items-lg-center blog__info-links">
+                                        <div
+                                            class="col-6 col-md-4 col-lg-3 gap-2 gap-md-2 d-lg-flex align-items-lg-center justify-content-lg-start px-0 gap-lg-2">
+                                            <i class="fa fa-user"></i>
+                                            <span>Travel, Lifestyle</span>
+                                        </div>
+                                        <div
+                                            class="col-6 col-md-4 col-lg-3 gap-2 gap-md-2 d-lg-flex align-items-lg-center justify-content-lg-start px-0 gap-lg-2 ps-lg-3 ps-2 ps-md-1">
+                                            <i class="fa fa-comments"></i>
+                                            <span>03 Comments</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog__info pb-2 mb-5">
+                                <div class="position-relative">
+                                    <img class="w-100" src="./assets/images/blog/single_blog_1.png.webp"
+                                        alt="single blog image">
+                                    <div
+                                        class="d-lg-flex flex-column py-2 align-items-lg-center rounded-2 blog__info-date">
+                                        <span class="fw-bold fs-4">15</span>
+                                        <span class="fw-medium fs-5">Jan</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <a href="#" class="d-block mt-5 py-3 text-dark fw-semibold custom-link">Google
+                                        inks pact
+                                        for
+                                        new
+                                        35-storey office</a>
+                                    <p class="text-muted">
+                                        That dominion stars lights dominion divide years for fourth have don't stars is
+                                        that
+                                        he
+                                        earth it first without heaven in place seed it second morning saying.
+                                    </p>
+                                    <div class="row my-4 align-items-lg-center blog__info-links">
+                                        <div
+                                            class="col-6 col-md-4 col-lg-3 gap-2 gap-md-2 d-lg-flex align-items-lg-center justify-content-lg-start px-0 gap-lg-2">
+                                            <i class="fa fa-user"></i>
+                                            <span>Travel, Lifestyle</span>
+                                        </div>
+                                        <div
+                                            class="col-6 col-md-4 col-lg-3 gap-2 gap-md-2 d-lg-flex align-items-lg-center justify-content-lg-start px-0 gap-lg-2 ps-lg-3 ps-2 ps-md-1">
+                                            <i class="fa fa-comments"></i>
+                                            <span>03 Comments</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog__info pb-2 mb-5">
+                                <div class="position-relative">
+                                    <img class="w-100" src="./assets/images/blog/single_blog_1.png.webp"
+                                        alt="single blog image">
+                                    <div
+                                        class="d-lg-flex flex-column py-2 align-items-lg-center rounded-2 blog__info-date">
+                                        <span class="fw-bold fs-4">15</span>
+                                        <span class="fw-medium fs-5">Jan</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <a href="#" class="d-block mt-5 py-3 text-dark fw-semibold custom-link">Google
+                                        inks pact
+                                        for
+                                        new
+                                        35-storey office</a>
+                                    <p class="text-muted">
+                                        That dominion stars lights dominion divide years for fourth have don't stars is
+                                        that
+                                        he
+                                        earth it first without heaven in place seed it second morning saying.
+                                    </p>
+                                    <div class="row my-4 align-items-lg-center blog__info-links">
+                                        <div
+                                            class="col-6 col-md-4 col-lg-3 gap-2 gap-md-2 d-lg-flex align-items-lg-center justify-content-lg-start px-0 gap-lg-2">
+                                            <i class="fa fa-user"></i>
+                                            <span>Travel, Lifestyle</span>
+                                        </div>
+                                        <div
+                                            class="col-6 col-md-4 col-lg-3 gap-2 gap-md-2 d-lg-flex align-items-lg-center justify-content-lg-start px-0 gap-lg-2 ps-lg-3 ps-2 ps-md-1">
+                                            <i class="fa fa-comments"></i>
+                                            <span>03 Comments</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog__info pb-2 mb-5">
+                                <div class="position-relative">
+                                    <img class="w-100" src="./assets/images/blog/single_blog_1.png.webp"
+                                        alt="single blog image">
+                                    <div
+                                        class="d-lg-flex flex-column py-2 align-items-lg-center rounded-2 blog__info-date">
+                                        <span class="fw-bold fs-4">15</span>
+                                        <span class="fw-medium fs-5">Jan</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <a href="#" class="d-block mt-5 py-3 text-dark fw-semibold custom-link">Google
+                                        inks pact
+                                        for
+                                        new
+                                        35-storey office</a>
+                                    <p class="text-muted">
+                                        That dominion stars lights dominion divide years for fourth have don't stars is
+                                        that
+                                        he
+                                        earth it first without heaven in place seed it second morning saying.
+                                    </p>
+                                    <div class="row my-4 align-items-lg-center blog__info-links">
+                                        <div
+                                            class="col-6 col-md-4 col-lg-3 gap-2 gap-md-2 d-lg-flex align-items-lg-center justify-content-lg-start px-0 gap-lg-2">
+                                            <i class="fa fa-user"></i>
+                                            <span>Travel, Lifestyle</span>
+                                        </div>
+                                        <div
+                                            class="col-6 col-md-4 col-lg-3 gap-2 gap-md-2 d-lg-flex align-items-lg-center justify-content-lg-start px-0 gap-lg-2 ps-lg-3 ps-2 ps-md-1">
+                                            <i class="fa fa-comments"></i>
+                                            <span>03 Comments</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- pagination -->
+                            <div class="d-lg-flex justify-content-center pt-5 my-5">
+                                <nav>
+                                    <ul class="pagination">
+                                        <li class="page-item mx-1">
+                                            <a class="page-link text-black-50 px-3 py-2" href="#" aria-label="Previous">
+                                                <i class="fa fa-angle-left"></i>
+                                            </a>
+                                        </li>
+                                        <li class="page-item mx-1">
+                                            <a class="page-link text-black-50 px-3 py-2" href="#">1</a>
+                                        </li>
+                                        <li class="page-item mx-1">
+                                            <a class="page-link text-black-50 px-3 py-2" href="#">2</a>
+                                        </li>
+                                        <li class="page-item mx-1">
+                                            <a class="page-link text-black-50 px-3 py-2" href="#" aria-label="Next">
+                                                <i class="fa fa-angle-right"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- sidebar -->
+                    <div class="col-lg-4 mt-lg-4">
+                        <!-- Search -->
+                        <div class="row gap-3 mb-4 bg-light-pink search">
+                            <div class="col-lg-12 position-relative">
+                                <input type="text" placeholder="Search Keyword" class="w-100 ps-3 py-3 border">
+                                <i
+                                    class="fa fa-search text-white position-absolute end-0 top-0 bottom-0 px-3 d-lg-flex align-items-lg-center"></i>
+                            </div>
+                            <div class="col-lg-12">
+                                <button class="pink-btn w-100 py-3">SEARCH</button>
+                            </div>
+                        </div>
+                        <!-- Category -->
+                        <div class="row gap-3 mb-4 bg-light-pink">
+                            <h5 class="border-bottom text-black fw-medium pb-3">Category</h5>
+                            <ul>
+                                <li>
+                                    <a href="#" class="custom-link text-black-50 border-bottom d-block py-3">Resaurant
+                                        food(37)</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="custom-link text-black-50 border-bottom d-block py-3">Travel
+                                        news(10)</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="custom-link text-black-50 border-bottom d-block py-3">Modern
+                                        technology(03)</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="custom-link text-black-50 border-bottom d-block py-3">Product(11)</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="custom-link text-black-50 border-bottom d-block py-3">Inspiration21</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="custom-link text-black-50 border-bottom d-block py-3">Health
+                                        Care (21)09</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Recent Post -->
+                        <div class="row gap-3 mb-4 bg-light-pink">
+                            <h5 class="border-bottom text-black fw-medium pb-3">Recent Post</h5>
+                            <ul>
+                                <li class="mb-3 d-lg-flex align-items-lg-center gap-4">
+                                    <img src="./assets/images/blog/post_1.png.webp" alt="">
+                                    <div class="d-lg-flex flex-column ">
+                                        <a href="#" class="custom-link text-black">From life was you fish...</a>
+                                        <span class="text-black-50">January 12, 2019</span>
+                                    </div>
+                                </li>
+                                <li class="mb-3 d-lg-flex align-items-lg-center gap-4">
+                                    <img src="./assets/images/blog/post_2.png.webp" alt="">
+                                    <div class="d-lg-flex flex-column ">
+                                        <a href="#" class="custom-link text-black">From life was you fish...</a>
+                                        <span class="text-black-50">January 12, 2019</span>
+                                    </div>
+                                </li>
+                                <li class="mb-3 d-lg-flex align-items-lg-center gap-4">
+                                    <img src="./assets/images/blog/post_3.png.webp" alt="">
+                                    <div class="d-lg-flex flex-column ">
+                                        <a href="#" class="custom-link text-black">From life was you fish...</a>
+                                        <span class="text-black-50">January 12, 2019</span>
+                                    </div>
+                                </li>
+                                <li class="d-lg-flex align-items-lg-center gap-4">
+                                    <img src="./assets/images/blog/post_4.png.webp" alt="">
+                                    <div class="d-lg-flex flex-column ">
+                                        <a href="#" class="custom-link text-black">From life was you fish...</a>
+                                        <span class="text-black-50">January 12, 2019</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Tag Clouds -->
+                        <div class="row gap-3 mb-4 bg-light-pink">
+                            <h5 class="border-bottom text-black fw-medium pb-3">Tag Clouds</h5>
+                            <ul class="d-lg-flex flex-wrap gap-1 tags__container">
+                                <li class="my-2">
+                                    <a href="#" class="bg-white px-md-4 px-3 py-2 border text-muted">project</a>
+                                </li>
+                                <li class="my-2">
+                                    <a href="#" class="bg-white px-md-4 px-3 py-2 border text-muted">love</a>
+                                </li>
+                                <li class="my-2">
+                                    <a href="#" class="bg-white px-md-4 px-3 py-2 border text-muted">technology</a>
+                                </li>
+                                <li class="my-2">
+                                    <a href="#" class="bg-white px-md-4 px-3 py-2 border text-muted">travel</a>
+                                </li>
+                                <li class="my-2">
+                                    <a href="#" class="bg-white px-md-4 px-3 py-2 border text-muted">technology</a>
+                                </li>
+                                <li class="my-2">
+                                    <a href="#" class="bg-white px-md-4 px-3 py-2 border text-muted">life style</a>
+                                </li>
+                                <li class="my-2">
+                                    <a href="#" class="bg-white px-md-4 px-3 py-2 border text-muted">design</a>
+                                </li>
+                                <li class="my-2">
+                                    <a href="#" class="bg-white px-md-4 px-3 py-2 border text-muted">illustration</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Instagram Feeds -->
+                        <div class="row gap-3 mb-4 bg-light-pink">
+                            <h5 class="border-bottom text-black fw-medium pb-3">Instagram Feeds</h5>
+                            <ul class="row tags__container">
+                                <li class="my-2 col-4">
+                                    <a href="#">
+                                        <img src="./assets/images/blog/post_5.png.webp" alt="Instagram Feeds photo">
+                                    </a>
+                                </li>
+                                <li class="my-2 col-4">
+                                    <a href="#">
+                                        <img src="./assets/images/blog/post_6.png.webp" alt="Instagram Feeds photo">
+                                    </a>
+                                </li>
+                                <li class="my-2 col-4">
+                                    <a href="#">
+                                        <img src="./assets/images/blog/post_7.png.webp" alt="Instagram Feeds photo">
+                                    </a>
+                                </li>
+                                <li class="my-2 col-4">
+                                    <a href="#">
+                                        <img src="./assets/images/blog/post_8.png.webp" alt="Instagram Feeds photo">
+                                    </a>
+                                </li>
+                                <li class="my-2 col-4">
+                                    <a href="#">
+                                        <img src="./assets/images/blog/post_9.png.webp" alt="Instagram Feeds photo">
+                                    </a>
+                                </li>
+                                <li class="my-2 col-4">
+                                    <a href="#">
+                                        <img src="./assets/images/blog/post_10.png.webp" alt="Instagram Feeds photo">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Newsletter -->
+                        <div class="row gap-3 mb-4 bg-light-pink search">
+                            <h5 class="border-bottom text-black fw-medium pb-3">Newsletter</h5>
+                            <div class="col-lg-12 position-relative">
+                                <input type="email" placeholder="Enter email" class="w-100 ps-3 py-3 border">
+                            </div>
+                            <div class="col-lg-12">
+                                <button class="pink-btn w-100 py-3">SUBSCRIBE</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="container pt-5">
+                <div class="row justify-content-lg-between pt-5">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                        <div class="mb-5">
+                            <div class="footer-logo mb-5">
+                                <a href="index.html"><img src="./assets/images/logo/logo2_footer.png.webp"
+                                        alt="footer logo"></a>
+                            </div>
+                            <div class="footer-tittle mb-5">
+                                <span class="d-block mt-4 mb-5">Subscribe our newsletter to get updates about our
+                                    services</span>
+                            </div>
+
+                            <form action="#" class="d-lg-flex flex-column gap-4">
+                                <input type="email" placeholder="Email Address"
+                                    class="text-center text-white bg-transparent">
+                                <button class="border-0 text-white">Subscribe</button>
+                            </form>
+                            <div class="d-lg-flex mt-5 gap-3 footer__socials">
+                                <a href="#"
+                                    class="d-lg-flex justify-content-center align-items-lg-center text-white p-2 rounded-pill">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#"
+                                    class="d-lg-flex justify-content-center align-items-lg-center text-white p-2 rounded-pill">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#"
+                                    class="d-lg-flex justify-content-center align-items-lg-center text-white p-2 rounded-pill">
+                                    <i class="fab fa-pinterest-p"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1"></div>
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-5">
+                        <h3 class="text-white fw-medium">Company</h3>
+                        <ul class="ps-0 mt-4">
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Why choose us</a>
+                            </li>
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Review</a>
+                            </li>
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Customers</a>
+                            </li>
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Blog</a>
+                            </li>
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Carrier</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-5">
+                        <h3 class="text-white fw-medium">Products</h3>
+                        <ul class="ps-0 mt-4">
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Why choose us</a>
+                            </li>
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Review</a>
+                            </li>
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Customers</a>
+                            </li>
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Blog</a>
+                            </li>
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Carrier</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-5">
+                        <h3 class="text-white fw-medium">Support</h3>
+                        <ul class="ps-0 mt-4">
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Technology</a>
+                            </li>
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Products</a>
+                            </li>
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Customers</a>
+                            </li>
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Quality</a>
+                            </li>
+                            <li>
+                                <a class="text-white-50 my-3 d-block" href="#">Sales geography</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="mb-0 text-white-50 text-center py-5 mt-4">
+                    Copyright ©2024 All rights reserved | This template is made with
+                    <i class="text-white fa fa-heart"></i>
+                    by
+                    <a href="#" class="text-white fw-medium">Colorlib</a>
+                </p>
+            </div>
+        </footer>
+
+        <a href="#" class="level-up-btn position-fixed z-3">
+            <i
+                class="fa fa-level-up-alt text-white d-lg-flex justify-content-center align-items-lg-center rounded-pill"></i>
+        </a>
+    </body>
+
+</html>

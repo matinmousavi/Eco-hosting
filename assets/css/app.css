@@ -1,0 +1,269 @@
+@import "bootstrap.css";
+@import "reset.css";
+@import "variables.css";
+@import "utilities.css";
+@import "header.css";
+@import "footer.css";
+
+/* --------------------------------- main ---------------------------------- */
+
+/* hero */
+.hero__caption span {
+  color: #9f78ff;
+}
+.hero__caption h1 {
+  font-size: 65px;
+}
+.hero__caption p {
+  color: var(--text-gray--color);
+  font-size: 18px;
+}
+/* search domin */
+.search__domin p {
+  color: var(--text-gray--color);
+  font-size: 14px;
+}
+.search__domin input {
+  padding-left: 76px;
+  padding-right: 33px;
+}
+.search__domin i {
+  color: #c4c4c4;
+}
+.search__domin ul li ::before {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 25px;
+  right: 0;
+  top: 2px;
+  background: #73469f;
+}
+.search__domin ul li span:first-child {
+  font-size: 20px;
+}
+.search__domin ul li span:nth-child(2) {
+  font-size: 14px;
+}
+/* most amazing */
+.most__amazing > div > div p {
+  color: var(--text-gray--color);
+}
+.most__amazing img {
+  margin-bottom: 30px;
+}
+/* choose plan */
+.choose__plan {
+  padding: 3rem 0 30rem 0;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.choose__plan::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: -10rem;
+  z-index: -1;
+  width: 250%;
+  height: 10rem;
+  background-color: white;
+  transform: rotate(2deg);
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+  -o-transform: rotate(2deg);
+}
+.choose__plan p {
+  color: var(--text-gray--color);
+}
+.choose__plan-card {
+  box-shadow: 0 8px 26px rgba(67, 40, 124, 0.08);
+}
+.choose__plan-card h4 > span {
+  color: #838a9b;
+  font-size: 12px;
+}
+.choose__plan-card > div h4:nth-child(4)::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #e7e6eb;
+  left: 0;
+  bottom: 0;
+}
+.choose__plan-card-list {
+  color: #717081;
+}
+.choose__plan-card-list li {
+  padding: 1rem 0;
+}
+.choose__plan-card a {
+  border: 1px solid var(--pink-color);
+  color: var(--pink-color);
+  transition: 0.5s;
+  padding: 10px 64px;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.choose__plan-card:hover a {
+  border: 1px solid var(--pink-color);
+  color: #fff;
+  background: linear-gradient(to bottom, #a077ff 0%, #ef67ff 100%);
+}
+/* global server */
+.global__server {
+  margin-top: 28rem;
+}
+.global__server h2,
+.dedicated__server h2,
+.most__amazing h2,
+.choose__plan h2,
+.ask__questions h2 {
+  font-size: 44px;
+}
+.global__server p,
+.dedicated__server p {
+  text-align: justify;
+}
+.global__server > div > div:nth-child(2),
+.dedicated__server > div > div:nth-child(1) {
+  padding-left: 50px;
+}
+.global__server > div > div:nth-child(2) p,
+.dedicated__server > div > div:nth-child(1) p {
+  color: #646d77;
+}
+
+/* ask__questions */
+.ask__questions {
+  padding-top: 16rem;
+  padding-bottom: 10rem;
+}
+.ask__questions-problem > div {
+  padding-left: 24px;
+}
+.ask__questions .ask__questions-text {
+  color: #7a8290;
+}
+.ask__questions h3 {
+  font-size: 20px;
+  margin-bottom: 21px;
+}
+.ask__questions .col-lg-6 span {
+  font-size: 20px;
+}
+
+/* qoutes */
+.qoutes {
+  background-color: var(--second-color);
+  padding: 3rem 6rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+.qoutes > div > div:nth-child(2) > span:nth-child(2) {
+  color: var(--text-gray--color);
+  font-size: 14px;
+}
+.qoutes-angle {
+  width: 40px;
+  height: 40px;
+  font-size: 1.3rem;
+  color: var(--second-color);
+}
+.qoutes-angle:hover {
+  color: var(--second-color);
+}
+
+/* --------------------------------- Responsive ---------------------------------- */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .global__server {
+    margin-top: 70rem;
+  }
+  .global__server h2 {
+    padding-top: 5rem;
+  }
+}
+
+@media (max-width: 769px) {
+  .hero__caption h1 {
+    font-size: 50px;
+  }
+  .global__server {
+    margin-top: 69rem;
+  }
+  .global__server h2 {
+    padding-top: 50px;
+  }
+  .global__server > div > div:nth-child(2),
+  .dedicated__server > div > div:nth-child(1) {
+    padding-left: 5px;
+  }
+  /* ask__questions */
+  .ask__questions {
+    padding-top: 9rem;
+    padding-bottom: 5rem;
+  }
+  .ask__questions-problem > div {
+    padding-left: 29px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 577px) {
+  .hero__caption h1 {
+    font-size: 29px;
+  }
+  .hero__caption p {
+    font-size: 16px;
+  }
+  .most__amazing h2,
+  .choose__plan h2,
+  .global__server h2,
+  .ask__questions h2,
+  .dedicated__server h2 {
+    font-size: 24px;
+  }
+  .search__domin {
+    margin-top: 7rem !important;
+  }
+  .search__domin input {
+    font-size: 12px !important;
+  }
+  .search__domin-search-icon {
+    font-size: 12px !important;
+  }
+  .choose__plan {
+    padding: 3rem 0 20rem 0;
+  }
+  .global__server {
+    margin-top: 120rem;
+  }
+  .global__server p,
+  .dedicated__server p {
+    text-align: left;
+  }
+  .global__server p {
+    font-size: 15px;
+  }
+  .ask__questions {
+    padding-bottom: 3rem;
+  }
+  .qoutes {
+    width: 100% !important;
+    padding: 3rem 1rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+  }
+}
